@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tvoje postava v DnD</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body onmousemove="suspicious()">
+    <div id="logo">
+
+    </div>
+    <main>
+        <div class="character glass">
+            <div id="pocitadloZivotu" onclick="nastavZivoty(hps[0])">
+
+            </div>
+            <div id="boxZivotu" class="pointBar">
+            </div>
+            <div id="inventarContainer">
+            </div>
+            <div id="postava" class="glass">
+                <img src="images/postava.png" alt="">
+            </div>
+        </div>
+        <div class="ovladani glass">
+            <form>
+                <input type="search" id="vstupNazev">
+                <input type="search" id="vstupMnozstvi">
+                <input type="button" id="pridejItemButton" value="Přidat" onclick="pridejNovyItem()">
+                <ul id="selectIconMenu" class="glass">
+                    <li class="selectItem selectedItem" onclick="nastavIkonu(this)"  value="platek"><img src="zelezny_platek.png" alt=""></li>
+                    <li class="selectItem" onclick="nastavIkonu(this)"><img src="houbicka.png" alt=""></li>
+                    <li class="selectItem" onclick="nastavIkonu(this)"><img src="brambora.png" alt=""></li>
+                    <li class="selectItem" onclick="nastavIkonu(this)"><img src="mrkev.png" alt=""></li>
+                    <li class="selectItem" onclick="nastavIkonu(this)"><img src="kompas.png" alt=""></li>
+                    <li class="selectItem" onclick="nastavIkonu(this)"><img src="zelezny_platek.png" alt=""></li>
+                    <li class="selectItem" onclick="nastavIkonu(this)"><img src="zelezny_platek.png" alt=""></li>
+                    <li class="selectItem" onclick="nastavIkonu(this)"><img src="zelezny_platek.png" alt=""></li>
+                    <li class="selectItem" onclick="nastavIkonu(this)"><img src="zelezny_platek.png" alt=""></li>
+                    <li class="selectItem" onclick="nastavIkonu(this)"><img src="zelezny_platek.png" alt=""></li>
+                </ul>
+            </form>
+            <button class="glass buttonVygenerovat" onclick="vygenerujKlic()">Vygeneruj klic</button>
+        </div>
+    </main>
+</body>
+<script src="dnd.js"></script>
+</html>
