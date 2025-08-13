@@ -297,6 +297,7 @@ button:active{
     scale: 20;
     font-weight: 700;
     cursor: pointer;
+    opacity: 0;
 }
 .refresh{
     
@@ -360,4 +361,5 @@ button:active{
 }
 input[type="search" i]#vstupMnozstvi {
     width: 40px !important;
+
 }
