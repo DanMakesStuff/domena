@@ -1,0 +1,164 @@
+body{
+    height: 100vh;
+    width: 100vw;
+    font-family: 'Quicksand';
+}
+.galerie-outer-dan{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    overflow: visible;
+}
+.galerie-outer-dan .button-dalsi{
+    position: absolute;
+    left: 10px;
+    z-index: 1000;
+}
+.galerie-outer-dan .button-predchozi{
+    position: absolute;
+    right: 10px;
+    z-index: 1000;
+}
+.galerie-images{
+    position: relative;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+@media screen and (max-width: 900px) {
+    .galerie-outer-dan .galerie-images img{
+        max-height: none !important;
+        height: auto !important;
+        max-width: 90vw;
+    }
+    .titulek{
+        height: 100px !important;
+    }
+}
+.galerie-outer-dan .galerie-images img{
+    max-height: 100% !important;
+    transition: all 0.4s cubic-bezier(0.755, 0.05, 0.855, 0.06);
+    opacity: 0;
+    position: absolute;
+    height: 60%;
+}
+.galerie-outer-dan .aktivni{
+    opacity: 1 !important;
+    z-index: 10;
+    margin-top: 10%;
+    height: 90% !important;
+    margin: 0;
+}
+.galerie-outer-dan .druhy{
+    z-index: 9;
+    opacity: 0.1 !important;
+    transform: scale(0.8);
+    filter: grayscale(90%);
+    height: 80% !important;
+    margin-right: 30vw;
+}
+.galerie-outer-dan .nasledujici{
+    z-index: 9;
+    opacity: 0.1 !important;
+    transform: scale(1);
+    filter: grayscale(90%);
+    height: 80% !important;
+    margin-left: 30vw;
+}
+.galerie-outer-dan #counter{
+    position: absolute;
+    z-index: 1000;
+    bottom: 0px;
+    height: 30px;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 8px;
+}
+#counter div{
+    height: 30px;
+    width: 30px;
+    transition: all 0.3s;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+}
+#counter div::after{
+    content: "";
+    width: 20%;
+    height: 20%;
+    position: absolute;
+    background-color: #fff;
+    opacity: 0.6;
+    transition: all 0.3s;
+    border-radius: 100%;
+}
+#counter div.active::after{
+    opacity: 1 !important;
+    height: 40%;
+    width: 40%;
+}
+.galerie-outer-dan button{
+    cursor: pointer;
+    height: 20px;
+    width: 20px;
+    border-radius: 100%;
+    background-color: transparent;
+    border: 2px solid var(--zluta);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    line-height: 20px;
+    color: #fff;
+    opacity: 1;
+    transition: all 0.3s;
+}
+.galerie-outer-dan button:active{
+    opacity: 0.8;
+    transform: translateY(3px);
+    transition: all 0.05s;
+}
+.titulek{
+    position: absolute;
+    height: 20px;
+    top: 0px;
+    right: 0px;
+    padding: 5px;
+    font-size: 14px;
+    color: var(--zluta);
+    overflow-y: hidden;
+    cursor: pointer;
+    z-index: 10;
+}
+.titulek > .ikona{
+    height: 20px !important;
+    width: 20px !important;
+    font-size: 15px;
+    text-align: center;
+    border: 1px solid #fff;
+    color: #fff;
+    border-radius: 100%;
+    max-width: unset !important;
+    position: absolute;
+    right: 0px;
+    top: 3px;
+}
+.titulek .info{
+    padding-right: 25px;
+    transform: translateY(-85px);
+    transition: all 0.7s cubic-bezier(0.215, 0.610, 0.355, 1);
+}
+.titulek:hover .info{
+    transform: translateY(0px);
+    transition: all 0.7s cubic-bezier(0.215, 0.610, 0.355, 1);
+}

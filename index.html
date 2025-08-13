@@ -1,0 +1,238 @@
+<!DOCTYPE html>
+<html lang="cz">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DanMakesStuff</title>
+    <link rel="shortcut icon" href="ikona.png" type="image/x-icon">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="animations.css">
+</head>
+<body>
+    <div class="menu" onclick="otevrit()">
+        <ul>
+            <li>&nbsp;</li>
+            <li><a onclick="uzivatelKlikl(this)" bruh="#modelling">3D Modelling</a></li>
+            <li><a onclick="uzivatelKlikl(this)" bruh="#graphics">Graphics</a></li>
+            <li><a onclick="uzivatelKlikl(this)" bruh="#webdesign">Webdesign</a></li>
+            <li><a onclick="uzivatelKlikl(this)" bruh="#modelling-galery">3D Stuff</a></li>
+            <li><a onclick="uzivatelKlikl(this)" bruh="#graphics-galery">Graphics Stuff</a></li>
+            <li style="margin-bottom: 7vh;"><a onclick="uzivatelKlikl(this)" bruh="#web-dev">Websites</a></li>
+            <li><a onclick="uzivatelKlikl(this)" bruh="#software">Contact</a></li>
+        </ul>
+    </div>
+    <div class="titlescreen">
+        <div class="image">
+            <img src="images/my_photo_main.png" alt="">
+            <div class="carka carka1"></div>
+            <div class="carka carka2"></div>
+            <div class="tecka tecka1"></div>
+            <div class="tecka tecka2"></div>
+        </div>
+        <div class="titulek">
+            <h1>Dan</h1><h1>Makes</h1><h1>Stuff</h1>
+        </div>
+    </div>
+    <div class="hlavni-obsah">
+        <div class="content sided" id="modelling">
+            <h1>About Me</h1>
+            <div class="side">
+                <h2>3D Modelling</h2>
+                <div class="other-text">
+                    <p class="first">
+                        I first tried 3d modelling about 5 years ago and since then I've used Blender, Blockbench, Cinema 4D, <a href="https://www.mineimator.com/">Mine-imator</a> or Sketchup in which I've made several <a href="#3d_galery">small projects</a>.
+                    </p>
+                </div>
+                <img src="images/modelling.png" alt="">
+            </div>
+        </div>
+        <div class="content sided" id="graphics">
+            <div class="side">
+                <h2>Graphics</h2>
+                <div class="other-text">
+                    <p class="first">
+                        <button class="more" onclick="showMore(this)">More</button>
+                        Most of my experience in computer graphics comes from working on <a href="#graphics-galery">pixel art projects</a>, but I've tried several other things too!
+                    </p>
+                    <p class="more">
+                        Programs used to make all of my work were Adobe Photoshop or Zoner photo studio. One of the first things I made were game related textures, profile pictures and desktop wallpapers.
+                    </p>
+                </div>
+                <img src="images/bitmap.png" alt="">
+            </div>
+        </div>
+        <div class="content sided" id="webdesign">
+            <div class="side">
+                <h2>Web Design</h2>
+                <div class="other-text">
+                    <p class="first">
+                        <button class="more" onclick="showMore(this)">More</button>
+                        <a href="#web-dev">Web design</a>. Although it's more time consuming and, in my opinion, most complex branch out these three, I find it very entertaining as it combines both programming and graphics design.
+                    </p>
+                    <p class="more">
+                        I was taught how to make websites on a web builder app in elementary school, but I only learned how to make actual websites about two years ago. Since then I've used VS Code.    
+                    </p>
+                </div>
+                <img src="images/webdevelopment.png" alt="">
+            </div>
+        </div>
+        <div class="content sided galery" id="modelling-galery">
+            <h1>The Things I Make</h1>
+            <div class="side">
+                <h2>3D Models</h2>
+                <div class="other-text">
+                    <p class="first">
+                        Models made in multiple programs such as Blender, Sketchup, Blockbench, etc.
+                    </p>
+                </div>
+                <div class="galerie-wrap">
+                    <iframe src="3d_galerie.html" frameborder="0">
+                    </iframe>
+                </div>
+            </div>
+        </div>
+        <div class="content sided galery" id="graphics-galery">
+            <div class="side">
+                <h2>Graphics</h2>
+                <div class="other-text">
+                    <p class="first">
+                        <button class="more" onclick="showMore(this)">More</button>
+                        A list of small projects worth mentioning, usually made in Adobe Photoshop.
+                    </p>
+                    <p class="more">
+                        A few of the things here are quite old but I'm proud of them nonetheless!     
+                    </p>
+                </div>
+                <div class="galerie-wrap">
+                    <iframe src="graphics_galerie.html" frameborder="0">
+                    </iframe>
+                </div>
+            </div>
+        </div>
+        <div class="content sided galery" id="other-galery">
+            <div class="side">
+                <h2>Other stuff!</h2>
+                <div class="other-text">
+                    <p class="first">
+                        <button class="more" onclick="showMore(this)">More</button>
+                        Some more things I've made
+                    </p>
+                    <p class="more">
+                        If you read this, I wish you have a great day and I hope you like my website! 
+                    </p>
+                </div>
+                <div class="galerie-wrap">
+                    <iframe src="other_galerie.html" frameborder="0">
+                    </iframe>
+                </div>
+            </div>
+        </div>
+        <div class="content sided" id="web-dev">
+            <div class="webdev-wrap" id="web-dev-title">
+                <h2>Web Development</h2>
+                <div class="other-text">
+                    <p class="first">
+                        <button class="more" onclick="showMore(this)">More</button>
+                        Last, but not least, we have the websites I've made.
+                    </p>
+                    <p class="more">
+                        As previously mentioned, some of the projects are quite old and don't represent my current capabilities.
+                    </p>
+                </div>
+            </div>
+            <div class="side">
+                <div class="website-wrap">
+                    <div class="website">
+                        <img src="images/hotline.png" onClick="otevritOdkaz(this)" alt="">
+                        <a href="maturita/web/">
+                            <button>view! ></button>
+                        </a>
+                        <div class="info">
+                            Hotline Spoje browser game.
+                        </div>
+                    </div>
+                    <div class="website">
+                        <img src="images/yourways.png" onClick="otevritOdkaz(this)" alt="">
+                        <a href="ukoly/yourways/cz/">
+                            <button>view! ></button>
+                        </a>
+                        <div class="info">
+                            Yourways band website. (WIP)
+                        </div>
+                    </div>
+                    <div class="website">
+                        <img src="images/sake.png" onClick="otevritOdkaz(this)" alt="">
+                        <a href="ukoly/sake/">
+                            <button>view! ></button>
+                        </a>
+                        <div class="info">
+                            Small Sake themed website.
+                        </div>
+                    </div>
+                    <div class="website">
+                        <img src="images/microprojekty.png" onClick="otevritOdkaz(this)" alt="">
+                        <a href="microprojekty.html">
+                            <button>view! ></button>
+                        </a>
+                        <div class="info">
+                            A few beginner level JS things.
+                        </div>
+                    </div>
+                    <div class="website">
+                        <img src="images/slepice.png" onClick="otevritOdkaz(this)" alt="">
+                        <a href="ukoly/slepice/">
+                            <button>view! ></button>
+                        </a>
+                        <div class="info">
+                            A microsite based on.. chickens..
+                        </div>
+                    </div>
+                    <div class="website">
+                        <img src="images/podleSablony.png" onClick="otevritOdkaz(this)" alt="">
+                        <a href="ukoly/podleSablony/">
+                            <button>view! ></button>
+                        </a>
+                        <div class="info">
+                            First website built on a template.
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <footer>
+            <div class="footer-third footer-socials">
+                <h3>Socials</h3>
+                <ul>
+                    <li><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><!--! Font Awesome Pro 6.2.1 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) Copyright 2022 Fonticons, Inc. --><path d="M224.1 141c-63.6 0-114.9 51.3-114.9 114.9s51.3 114.9 114.9 114.9S339 319.5 339 255.9 287.7 141 224.1 141zm0 189.6c-41.1 0-74.7-33.5-74.7-74.7s33.5-74.7 74.7-74.7 74.7 33.5 74.7 74.7-33.6 74.7-74.7 74.7zm146.4-194.3c0 14.9-12 26.8-26.8 26.8-14.9 0-26.8-12-26.8-26.8s12-26.8 26.8-26.8 26.8 12 26.8 26.8zm76.1 27.2c-1.7-35.9-9.9-67.7-36.2-93.9-26.2-26.2-58-34.4-93.9-36.2-37-2.1-147.9-2.1-184.9 0-35.8 1.7-67.6 9.9-93.9 36.1s-34.4 58-36.2 93.9c-2.1 37-2.1 147.9 0 184.9 1.7 35.9 9.9 67.7 36.2 93.9s58 34.4 93.9 36.2c37 2.1 147.9 2.1 184.9 0 35.9-1.7 67.7-9.9 93.9-36.2 26.2-26.2 34.4-58 36.2-93.9 2.1-37 2.1-147.8 0-184.8zM398.8 388c-7.8 19.6-22.9 34.7-42.6 42.6-29.5 11.7-99.5 9-132.1 9s-102.7 2.6-132.1-9c-19.6-7.8-34.7-22.9-42.6-42.6-11.7-29.5-9-99.5-9-132.1s-2.6-102.7 9-132.1c7.8-19.6 22.9-34.7 42.6-42.6 29.5-11.7 99.5-9 132.1-9s102.7-2.6 132.1 9c19.6 7.8 34.7 22.9 42.6 42.6 11.7 29.5 9 99.5 9 132.1s2.7 102.7-9 132.1z"/></svg>
+                        <a class="instagram" href="https://www.instagram.com/danmakesstuff_/">Instagram</a></li>
+                    <li><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><!--! Font Awesome Pro 6.2.1 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) Copyright 2022 Fonticons, Inc. --><path d="M64 112c-8.8 0-16 7.2-16 16v22.1L220.5 291.7c20.7 17 50.4 17 71.1 0L464 150.1V128c0-8.8-7.2-16-16-16H64zM48 212.2V384c0 8.8 7.2 16 16 16H448c8.8 0 16-7.2 16-16V212.2L322 328.8c-38.4 31.5-93.7 31.5-132 0L48 212.2zM0 128C0 92.7 28.7 64 64 64H448c35.3 0 64 28.7 64 64V384c0 35.3-28.7 64-64 64H64c-35.3 0-64-28.7-64-64V128z"/></svg>
+                        <a onclick="zkopirujEmail()" href="javascript:void(0);">Email</a></li>
+                    <li><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><!--! Font Awesome Pro 6.2.1 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) Copyright 2022 Fonticons, Inc. --><path d="M504 256C504 119 393 8 256 8S8 119 8 256c0 123.78 90.69 226.38 209.25 245V327.69h-63V256h63v-54.64c0-62.15 37-96.48 93.67-96.48 27.14 0 55.52 4.84 55.52 4.84v61h-31.28c-30.8 0-40.41 19.12-40.41 38.73V256h68.78l-11 71.69h-57.78V501C413.31 482.38 504 379.78 504 256z"/></svg>
+                        <a class="facebook" href="https://www.facebook.com/profile.php?id=100010806275181">Facebook</a></li>
+                </ul>
+            </div>
+            <div class="footer-third">
+                <h3>Map of the website</h3>
+                <ul>
+                    <li><a onclick="uzivatelKlikl(this)" bruh="#modelling">3D Modelling</a></li>
+                    <li><a onclick="uzivatelKlikl(this)" bruh="#graphics">Graphics</a></li>
+                    <li><a onclick="uzivatelKlikl(this)" bruh="#webdesign">Webdesign</a></li>
+                    <li><a onclick="uzivatelKlikl(this)" bruh="#modelling-galery">3D Stuff</a></li>
+                    <li><a onclick="uzivatelKlikl(this)" bruh="#graphics-galery">Graphics Stuff</a></li>
+                    <li><a onclick="uzivatelKlikl(this)" bruh="#other-galery">Other graphics Stuff</a></li>
+                </ul>
+            </div>
+            <div class="footer-third last-footer">
+                <img src="images/rounded_logo.png" class="myLogo" alt="">
+                <h2> &#169; DanMakesStuff 2023 </h2>
+            </div>
+        </footer>  
+    </div>
+</body>
+<script src="https://kit.fontawesome.com/f4d43435c7.js" crossorigin="anonymous"></script>
+<script>
+    function zkopirujEmail(){navigator.clipboard.writeText("dchalupka@email.cz");}
+</script>
+<script src="script.js"></script>
+</html>

@@ -1,0 +1,80 @@
+
+@keyframes svetylka {
+    0%{
+        box-shadow: 0px 0px 0px var(--pruhlednazluta);
+    }
+    20%{
+        box-shadow: 0px 0px 0px var(--pruhlednazluta);
+    }
+    21%{
+        box-shadow: 0px 0px 15px var(--pruhlednazluta);
+    }
+    23%{
+        box-shadow: 0px 0px 0px var(--pruhlednazluta);
+    }
+    60%{
+        box-shadow: 0px 0px 0px var(--pruhlednazluta);
+    }
+    62%{
+        box-shadow: 0px 0px 15px var(--pruhlednazluta);
+    }
+    64%{
+        box-shadow: 0px 0px 0px var(--pruhlednazluta);
+    }
+    65%{
+        box-shadow: 0px 0px 0px var(--pruhlednazluta);
+    }
+    66%{
+        box-shadow: 0px 0px 15px var(--pruhlednazluta);
+    }
+    67%{
+        box-shadow: 0px 0px 0px var(--pruhlednazluta);
+    }
+    70%{
+        box-shadow: 0px 0px 0px var(--pruhlednazluta);
+    }
+    71%{
+        box-shadow: 0px 0px 15px var(--pruhlednazluta);
+    }
+    720%{
+        box-shadow: 0px 0px 0px var(--pruhlednazluta);
+    }
+    100%{
+        box-shadow: 0px 0px 0px var(--pruhlednazluta);
+    }
+}
+
+
+@keyframes debil {
+    0%{
+        left: 0px;
+        width: 0%;
+    }
+    25%{
+        left: 0px;
+        width: 100%;
+    }
+    50%{
+        right: 0px;
+        width: 100%;
+    }
+    100%{
+        right: 0px;
+        width: 0%;
+    }
+}
+
+@keyframes lmao {
+    0%{
+        transform: translateX(0px);
+    }
+    40%{
+        transform: translateX(60px);
+    }
+    80%{
+        transform: translateX(-40px);
+    }
+    100%{
+        transform: translateX(0px);
+    }
+}
