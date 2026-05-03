@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="cz">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sake</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="shortcut icon" href="favicon.png" type="image/x-icon">
+</head>
+<body>
+    <script>
+        
+    let vek = confirm("Bylo ti nad 18 let?")
+    if(vek){
+        console.log("Nice.")
+    }
+    else{
+        window.location.href = "http://chalupka.soskolin.eu"
+    }
+    </script>
+    <div class="titlescreen">
+        <div class="text">
+            <h1>Sake</h1>
+            <hr>
+            <h3>Od roku 1875.</h2>
+        </div>
+        <div class="images">
+            <img src="splash.png" alt="" id="splash">
+            <img src="bottle.png" alt="" id="bottle">
+            <img src="drop.png" alt="" id="drop">
+        </div>
+        <div class="text">
+            <h1>日本酒</h1>
+            <hr>
+            <h3>1875年以来</h2>
+        </div>
+    </div>
+    <div class="screen">
+        <div id="vyroba" class="uvod"></div>
+        <div class="screen-gradient"></div>
+        <div class="title">
+            <h1>Úvod</h1>
+            <hr>
+        </div>
+        <div class="obsah">
+            Pravé japonské Sake nese název Nihonšu (日本酒) a je vyrobeno z rýže několikanásobnou fermentací. Známé japonské značky, s dlouholetou tradicí, balí sake do krabic z pravého japonského javoru. Většina druhů sake obsahuje čtrnáct až sedmnáct procent alkoholu. Síla Sake je však hlavně v jeho plamenité chuti. Sake je součástí mnoha japonských rituálů, většinou při příležitosti oslav svátků.
+        </div>
+    </div>
+    <div class="screen" id="ingredience">
+        <div class="title">
+            <h1>Ingredience</h1>
+            <hr>
+        </div>
+        <div class="kontakty">
+            <div class="subtitle">
+                <h1>Rýže (sakamai)</h1>
+                <img src="ingred1.png" alt="">
+                <p>Nejdůležitější součást</p>
+            </div>
+        </div>
+        <div class="kontakty">
+            <div class="subtitle">
+                <h1>Voda</h1>
+                <img src="ingred2.png" alt="">
+                <p>Taky důležitá součást</p>
+            </div>
+        </div>
+        <div class="kontakty">
+            <div class="subtitle">
+                <h1>Líh</h1>
+                <img src="ingred3.png" alt="">
+                <p>Taky občas důležitý</p>
+            </div>
+        </div>
+    </div>
+    <div class="screen">
+        <div id="vyroba"></div>
+        <div class="screen-gradient"></div>
+        <div class="title">
+            <h1>Výroba</h1>
+            <hr>
+        </div>
+        <div class="obsah">
+            Sake se vyrábí ze speciálních odrůd rýže (sakamai). Rýžová zrna se nejprve obrousí, máčejí a v páře uvaří. Uvařená vychlazená zrna se infikují plísní koji (kropidlák rýžový, Aspergillus oryzae), která škrob enzymaticky štěpí na jednodušší cukry, které poté kvasí a vzniká alkohol. Výroba je velmi podobná výrobě piva. Někdy následuje destilace kvasu a následné přidání alkoholu do kvasícího nápoje, čímž se další kvašení zastaví a obsah alkoholu se zvýší na 18-25 %. Tento postup je obdobný postup při výrobě portského vína.
+        </div>
+    </div>
+    <div class="screen" id="pata">
+        <div class="kontakty">
+            <div class="subtitle" id="adresa">
+            </div>
+        </div>
+        <div class="kontakty">
+            <div class="subtitle">
+                <h1>Kontaktní údaje</h1>
+                <hr>
+                <p>Tel.: <span> 758 451 447</span></p>
+                <p>Email: <span> cservice@sakeorg.cz</span></p>
+                <p>Fax.: <span> 154 751 245</span></p>
+            </div>
+        </div>
+        <div class="kontakty">
+            <div class="subtitle">
+                <h1>Ostatní odkazy</h1>
+                <hr>
+                <ul>
+                    <li>Dopravci</li>
+                    <li>Instagram</li>
+                    <li>Facebook</li>
+                    <li>Sponsors</li>
+                    <li>Dokumentace</li>
+                </ul>
+            </div>
+        </div>
+    </div>
+    <div class="footer">
+        Copyright © 2021 - all rights reserved | Made by <a href="http://chalupka.soskolin.eu">DanMakesStuff</a>
+    </div>
+</body>
+<script>
+    document.getElementById("adresa").innerHTML = "<h1>Adresa firmy</h1><hr><p>Jaselská 826</p><p>280 90</span></p><p>Kolín</p>";
+</script>
+</html>

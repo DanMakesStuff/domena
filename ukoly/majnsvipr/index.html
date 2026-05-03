@@ -1,0 +1,575 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <main>
+        <div class="menu">
+            <div class="display mines" id="pocetMin">
+                05
+            </div>
+            <div class="face" id="zbyvajiciMiny">
+                5   
+            </div>
+            <div class="display timer" id="casovac">
+                20
+            </div>
+        </div>
+        <div id="table" class="tiles">
+            <div class="tile" onClick=hracKlikl(this)></div>
+            <div class="tile" onClick=hracKlikl(this)></div>
+            <div class="tile" onClick=hracKlikl(this)></div>
+            <div class="tile" onClick=hracKlikl(this)></div>
+            <div class="tile" onClick=hracKlikl(this)></div>
+            <div class="tile" onClick=hracKlikl(this)></div>
+            <div class="tile" onClick=hracKlikl(this)></div>
+            <div class="tile" onClick=hracKlikl(this)></div>
+            <div class="tile" onClick=hracKlikl(this)></div>
+            <div class="tile" onClick=hracKlikl(this)></div>
+            <div class="tile" onClick=hracKlikl(this)></div>
+            <div class="tile" onClick=hracKlikl(this)></div>
+            <div class="tile" onClick=hracKlikl(this)></div>
+            <div class="tile" onClick=hracKlikl(this)></div>
+            <div class="tile" onClick=hracKlikl(this)></div>
+            <div class="tile" onClick=hracKlikl(this)></div>
+            <div class="tile" onClick=hracKlikl(this)></div>
+            <div class="tile" onClick=hracKlikl(this)></div>
+            <div class="tile" onClick=hracKlikl(this)></div>
+            <div class="tile" onClick=hracKlikl(this)></div>
+            <div class="tile" onClick=hracKlikl(this)></div>
+            <div class="tile" onClick=hracKlikl(this)></div>
+            <div class="tile" onClick=hracKlikl(this)></div>
+            <div class="tile" onClick=hracKlikl(this)></div>
+            <div class="tile" onClick=hracKlikl(this)></div>
+            <div class="tile" onClick=hracKlikl(this)></div>
+            <div class="tile" onClick=hracKlikl(this)></div>
+            <div class="tile" onClick=hracKlikl(this)></div>
+            <div class="tile" onClick=hracKlikl(this)></div>
+            <div class="tile" onClick=hracKlikl(this)></div>
+            <div class="tile" onClick=hracKlikl(this)></div>
+            <div class="tile" onClick=hracKlikl(this)></div>
+            <div class="tile" onClick=hracKlikl(this)></div>
+            <div class="tile" onClick=hracKlikl(this)></div>
+            <div class="tile" onClick=hracKlikl(this)></div>
+            <div class="tile" onClick=hracKlikl(this)></div>
+            <div class="tile" onClick=hracKlikl(this)></div>
+            <div class="tile" onClick=hracKlikl(this)></div>
+            <div class="tile" onClick=hracKlikl(this)></div>
+            <div class="tile" onClick=hracKlikl(this)></div>
+            <div class="tile" onClick=hracKlikl(this)></div>
+            <div class="tile" onClick=hracKlikl(this)></div>
+            <div class="tile" onClick=hracKlikl(this)></div>
+            <div class="tile" onClick=hracKlikl(this)></div>
+            <div class="tile" onClick=hracKlikl(this)></div>
+            <div class="tile" onClick=hracKlikl(this)></div>
+            <div class="tile" onClick=hracKlikl(this)></div>
+            <div class="tile" onClick=hracKlikl(this)></div>
+            <div class="tile" onClick=hracKlikl(this)></div>
+            <div class="tile" onClick=hracKlikl(this)></div>
+            <div class="tile" onClick=hracKlikl(this)></div>
+            <div class="tile" onClick=hracKlikl(this)></div>
+            <div class="tile" onClick=hracKlikl(this)></div>
+            <div class="tile" onClick=hracKlikl(this)></div>
+            <div class="tile" onClick=hracKlikl(this)></div>
+            <div class="tile" onClick=hracKlikl(this)></div>
+            <div class="tile" onClick=hracKlikl(this)></div>
+            <div class="tile" onClick=hracKlikl(this)></div>
+            <div class="tile" onClick=hracKlikl(this)></div>
+            <div class="tile" onClick=hracKlikl(this)></div>
+            <div class="tile" onClick=hracKlikl(this)></div>
+            <div class="tile" onClick=hracKlikl(this)></div>
+            <div class="tile" onClick=hracKlikl(this)></div>
+            <div class="tile" onClick=hracKlikl(this)></div>
+            <div class="tile" onClick=hracKlikl(this)></div>
+            <div class="tile" onClick=hracKlikl(this)></div>
+            <div class="tile" onClick=hracKlikl(this)></div>
+            <div class="tile" onClick=hracKlikl(this)></div>
+            <div class="tile" onClick=hracKlikl(this)></div>
+            <div class="tile" onClick=hracKlikl(this)></div>
+            <div class="tile" onClick=hracKlikl(this)></div>
+            <div class="tile" onClick=hracKlikl(this)></div>
+            <div class="tile" onClick=hracKlikl(this)></div>
+            <div class="tile" onClick=hracKlikl(this)></div>
+            <div class="tile" onClick=hracKlikl(this)></div>
+            <div class="tile" onClick=hracKlikl(this)></div>
+            <div class="tile" onClick=hracKlikl(this)></div>
+            <div class="tile" onClick=hracKlikl(this)></div>
+            <div class="tile" onClick=hracKlikl(this)></div>
+            <div class="tile" onClick=hracKlikl(this)></div>
+            <div class="tile" onClick=hracKlikl(this)></div>
+            <div class="tile" onClick=hracKlikl(this)></div>
+            <div class="tile" onClick=hracKlikl(this)></div>
+            <div class="tile" onClick=hracKlikl(this)></div>
+            <div class="tile" onClick=hracKlikl(this)></div>
+            <div class="tile" onClick=hracKlikl(this)></div>
+            <div class="tile" onClick=hracKlikl(this)></div>
+            <div class="tile" onClick=hracKlikl(this)></div>
+            <div class="tile" onClick=hracKlikl(this)></div>
+            <div class="tile" onClick=hracKlikl(this)></div>
+            <div class="tile" onClick=hracKlikl(this)></div>
+            <div class="tile" onClick=hracKlikl(this)></div>
+            <div class="tile" onClick=hracKlikl(this)></div>
+            <div class="tile" onClick=hracKlikl(this)></div>
+            <div class="tile" onClick=hracKlikl(this)></div>
+            <div class="tile" onClick=hracKlikl(this)></div>
+            <div class="tile" onClick=hracKlikl(this)></div>
+            <div class="tile" onClick=hracKlikl(this)></div>
+            <div class="tile" onClick=hracKlikl(this)></div>
+            <div class="tile" onClick=hracKlikl(this)></div>
+            <div class="tile" onClick=hracKlikl(this)></div>
+            <div class="tile" onClick=hracKlikl(this)></div>
+            <div class="tile" onClick=hracKlikl(this)></div>
+            <div class="tile" onClick=hracKlikl(this)></div>
+            <div class="tile" onClick=hracKlikl(this)></div>
+            <div class="tile" onClick=hracKlikl(this)></div>
+            <div class="tile" onClick=hracKlikl(this)></div>
+            <div class="tile" onClick=hracKlikl(this)></div>
+            <div class="tile" onClick=hracKlikl(this)></div>
+            <div class="tile" onClick=hracKlikl(this)></div>
+            <div class="tile" onClick=hracKlikl(this)></div>
+            <div class="tile" onClick=hracKlikl(this)></div>
+            <div class="tile" onClick=hracKlikl(this)></div>
+            <div class="tile" onClick=hracKlikl(this)></div>
+            <div class="tile" onClick=hracKlikl(this)></div>
+            <div class="tile" onClick=hracKlikl(this)></div>
+            <div class="tile" onClick=hracKlikl(this)></div>
+            <div class="tile" onClick=hracKlikl(this)></div>
+            <div class="tile" onClick=hracKlikl(this)></div>
+            <div class="tile" onClick=hracKlikl(this)></div>
+            <div class="tile" onClick=hracKlikl(this)></div>
+            <div class="tile" onClick=hracKlikl(this)></div>
+            <div class="tile" onClick=hracKlikl(this)></div>
+            <div class="tile" onClick=hracKlikl(this)></div>
+            <div class="tile" onClick=hracKlikl(this)></div>
+            <div class="tile" onClick=hracKlikl(this)></div>
+            <div class="tile" onClick=hracKlikl(this)></div>
+            <div class="tile" onClick=hracKlikl(this)></div>
+            <div class="tile" onClick=hracKlikl(this)></div>
+            <div class="tile" onClick=hracKlikl(this)></div>
+            <div class="tile" onClick=hracKlikl(this)></div>
+            <div class="tile" onClick=hracKlikl(this)></div>
+            <div class="tile" onClick=hracKlikl(this)></div>
+            <div class="tile" onClick=hracKlikl(this)></div>
+            <div class="tile" onClick=hracKlikl(this)></div>
+            <div class="tile" onClick=hracKlikl(this)></div>
+            <div class="tile" onClick=hracKlikl(this)></div>
+            <div class="tile" onClick=hracKlikl(this)></div>
+            <div class="tile" onClick=hracKlikl(this)></div>
+            <div class="tile" onClick=hracKlikl(this)></div>
+            <div class="tile" onClick=hracKlikl(this)></div>
+            <div class="tile" onClick=hracKlikl(this)></div>
+            <div class="tile" onClick=hracKlikl(this)></div>
+            <div class="tile" onClick=hracKlikl(this)></div>
+            <div class="tile" onClick=hracKlikl(this)></div>
+            <div class="tile" onClick=hracKlikl(this)></div>
+            <div class="tile" onClick=hracKlikl(this)></div>
+            <div class="tile" onClick=hracKlikl(this)></div>
+            <div class="tile" onClick=hracKlikl(this)></div>
+            <div class="tile" onClick=hracKlikl(this)></div>
+            <div class="tile" onClick=hracKlikl(this)></div>
+            <div class="tile" onClick=hracKlikl(this)></div>
+            <div class="tile" onClick=hracKlikl(this)></div>
+            <div class="tile" onClick=hracKlikl(this)></div>
+            <div class="tile" onClick=hracKlikl(this)></div>
+            <div class="tile" onClick=hracKlikl(this)></div>
+            <div class="tile" onClick=hracKlikl(this)></div>
+            <div class="tile" onClick=hracKlikl(this)></div>
+            <div class="tile" onClick=hracKlikl(this)></div>
+            <div class="tile" onClick=hracKlikl(this)></div>
+            <div class="tile" onClick=hracKlikl(this)></div>
+            <div class="tile" onClick=hracKlikl(this)></div>
+            <div class="tile" onClick=hracKlikl(this)></div>
+            <div class="tile" onClick=hracKlikl(this)></div>
+            <div class="tile" onClick=hracKlikl(this)></div>
+            <div class="tile" onClick=hracKlikl(this)></div>
+            <div class="tile" onClick=hracKlikl(this)></div>
+            <div class="tile" onClick=hracKlikl(this)></div>
+            <div class="tile" onClick=hracKlikl(this)></div>
+            <div class="tile" onClick=hracKlikl(this)></div>
+            <div class="tile" onClick=hracKlikl(this)></div>
+            <div class="tile" onClick=hracKlikl(this)></div>
+            <div class="tile" onClick=hracKlikl(this)></div>
+            <div class="tile" onClick=hracKlikl(this)></div>
+            <div class="tile" onClick=hracKlikl(this)></div>
+            <div class="tile" onClick=hracKlikl(this)></div>
+            <div class="tile" onClick=hracKlikl(this)></div>
+            <div class="tile" onClick=hracKlikl(this)></div>
+            <div class="tile" onClick=hracKlikl(this)></div>
+            <div class="tile" onClick=hracKlikl(this)></div>
+            <div class="tile" onClick=hracKlikl(this)></div>
+            <div class="tile" onClick=hracKlikl(this)></div>
+            <div class="tile" onClick=hracKlikl(this)></div>
+            <div class="tile" onClick=hracKlikl(this)></div>
+            <div class="tile" onClick=hracKlikl(this)></div>
+            <div class="tile" onClick=hracKlikl(this)></div>
+            <div class="tile" onClick=hracKlikl(this)></div>
+            <div class="tile" onClick=hracKlikl(this)></div>
+            <div class="tile" onClick=hracKlikl(this)></div>
+            <div class="tile" onClick=hracKlikl(this)></div>
+            <div class="tile" onClick=hracKlikl(this)></div>
+            <div class="tile" onClick=hracKlikl(this)></div>
+            <div class="tile" onClick=hracKlikl(this)></div>
+            <div class="tile" onClick=hracKlikl(this)></div>
+            <div class="tile" onClick=hracKlikl(this)></div>
+            <div class="tile" onClick=hracKlikl(this)></div>
+            <div class="tile" onClick=hracKlikl(this)></div>
+            <div class="tile" onClick=hracKlikl(this)></div>
+            <div class="tile" onClick=hracKlikl(this)></div>
+            <div class="tile" onClick=hracKlikl(this)></div>
+            <div class="tile" onClick=hracKlikl(this)></div>
+            <div class="tile" onClick=hracKlikl(this)></div>
+            <div class="tile" onClick=hracKlikl(this)></div>
+            <div class="tile" onClick=hracKlikl(this)></div>
+            <div class="tile" onClick=hracKlikl(this)></div>
+            <div class="tile" onClick=hracKlikl(this)></div>
+            <div class="tile" onClick=hracKlikl(this)></div>
+            <div class="tile" onClick=hracKlikl(this)></div>
+            <div class="tile" onClick=hracKlikl(this)></div>
+            <div class="tile" onClick=hracKlikl(this)></div>
+            <div class="tile" onClick=hracKlikl(this)></div>
+            <div class="tile" onClick=hracKlikl(this)></div>
+            <div class="tile" onClick=hracKlikl(this)></div>
+            <div class="tile" onClick=hracKlikl(this)></div>
+            <div class="tile" onClick=hracKlikl(this)></div>
+            <div class="tile" onClick=hracKlikl(this)></div>
+            <div class="tile" onClick=hracKlikl(this)></div>
+            <div class="tile" onClick=hracKlikl(this)></div>
+            <div class="tile" onClick=hracKlikl(this)></div>
+            <div class="tile" onClick=hracKlikl(this)></div>
+            <div class="tile" onClick=hracKlikl(this)></div>
+            <div class="tile" onClick=hracKlikl(this)></div>
+            <div class="tile" onClick=hracKlikl(this)></div>
+            <div class="tile" onClick=hracKlikl(this)></div>
+            <div class="tile" onClick=hracKlikl(this)></div>
+            <div class="tile" onClick=hracKlikl(this)></div>
+            <div class="tile" onClick=hracKlikl(this)></div>
+            <div class="tile" onClick=hracKlikl(this)></div>
+            <div class="tile" onClick=hracKlikl(this)></div>
+            <div class="tile" onClick=hracKlikl(this)></div>
+            <div class="tile" onClick=hracKlikl(this)></div>
+            <div class="tile" onClick=hracKlikl(this)></div>
+            <div class="tile" onClick=hracKlikl(this)></div>
+            <div class="tile" onClick=hracKlikl(this)></div>
+            <div class="tile" onClick=hracKlikl(this)></div>
+            <div class="tile" onClick=hracKlikl(this)></div>
+            <div class="tile" onClick=hracKlikl(this)></div>
+            <div class="tile" onClick=hracKlikl(this)></div>
+            <div class="tile" onClick=hracKlikl(this)></div>
+            <div class="tile" onClick=hracKlikl(this)></div>
+            <div class="tile" onClick=hracKlikl(this)></div>
+            <div class="tile" onClick=hracKlikl(this)></div>
+            <div class="tile" onClick=hracKlikl(this)></div>
+            <div class="tile" onClick=hracKlikl(this)></div>
+            <div class="tile" onClick=hracKlikl(this)></div>
+            <div class="tile" onClick=hracKlikl(this)></div>
+            <div class="tile" onClick=hracKlikl(this)></div>
+            <div class="tile" onClick=hracKlikl(this)></div>
+            <div class="tile" onClick=hracKlikl(this)></div>
+            <div class="tile" onClick=hracKlikl(this)></div>
+            <div class="tile" onClick=hracKlikl(this)></div>
+            <div class="tile" onClick=hracKlikl(this)></div>
+            <div class="tile" onClick=hracKlikl(this)></div>
+            <div class="tile" onClick=hracKlikl(this)></div>
+            <div class="tile" onClick=hracKlikl(this)></div>
+            <div class="tile" onClick=hracKlikl(this)></div>
+            <div class="tile" onClick=hracKlikl(this)></div>
+            <div class="tile" onClick=hracKlikl(this)></div>
+            <div class="tile" onClick=hracKlikl(this)></div>
+            <div class="tile" onClick=hracKlikl(this)></div>
+            <div class="tile" onClick=hracKlikl(this)></div>
+            <div class="tile" onClick=hracKlikl(this)></div>
+            <div class="tile" onClick=hracKlikl(this)></div>
+            <div class="tile" onClick=hracKlikl(this)></div>
+            <div class="tile" onClick=hracKlikl(this)></div>
+            <div class="tile" onClick=hracKlikl(this)></div>
+            <div class="tile" onClick=hracKlikl(this)></div>
+            <div class="tile" onClick=hracKlikl(this)></div>
+            <div class="tile" onClick=hracKlikl(this)></div>
+            <div class="tile" onClick=hracKlikl(this)></div>
+            <div class="tile" onClick=hracKlikl(this)></div>
+            <div class="tile" onClick=hracKlikl(this)></div>
+            <div class="tile" onClick=hracKlikl(this)></div>
+            <div class="tile" onClick=hracKlikl(this)></div>
+            <div class="tile" onClick=hracKlikl(this)></div>
+            <div class="tile" onClick=hracKlikl(this)></div>
+            <div class="tile" onClick=hracKlikl(this)></div>
+            <div class="tile" onClick=hracKlikl(this)></div>
+            <div class="tile" onClick=hracKlikl(this)></div>
+            <div class="tile" onClick=hracKlikl(this)></div>
+            <div class="tile" onClick=hracKlikl(this)></div>
+            <div class="tile" onClick=hracKlikl(this)></div>
+            <div class="tile" onClick=hracKlikl(this)></div>
+            <div class="tile" onClick=hracKlikl(this)></div>
+            <div class="tile" onClick=hracKlikl(this)></div>
+            <div class="tile" onClick=hracKlikl(this)></div>
+            <div class="tile" onClick=hracKlikl(this)></div>
+            <div class="tile" onClick=hracKlikl(this)></div>
+            <div class="tile" onClick=hracKlikl(this)></div>
+            <div class="tile" onClick=hracKlikl(this)></div>
+            <div class="tile" onClick=hracKlikl(this)></div>
+            <div class="tile" onClick=hracKlikl(this)></div>
+            <div class="tile" onClick=hracKlikl(this)></div>
+            <div class="tile" onClick=hracKlikl(this)></div>
+            <div class="tile" onClick=hracKlikl(this)></div>
+            <div class="tile" onClick=hracKlikl(this)></div>
+            <div class="tile" onClick=hracKlikl(this)></div>
+            <div class="tile" onClick=hracKlikl(this)></div>
+            <div class="tile" onClick=hracKlikl(this)></div>
+            <div class="tile" onClick=hracKlikl(this)></div>
+            <div class="tile" onClick=hracKlikl(this)></div>
+            <div class="tile" onClick=hracKlikl(this)></div>
+            <div class="tile" onClick=hracKlikl(this)></div>
+            <div class="tile" onClick=hracKlikl(this)></div>
+            <div class="tile" onClick=hracKlikl(this)></div>
+            <div class="tile" onClick=hracKlikl(this)></div>
+            <div class="tile" onClick=hracKlikl(this)></div>
+            <div class="tile" onClick=hracKlikl(this)></div>
+            <div class="tile" onClick=hracKlikl(this)></div>
+            <div class="tile" onClick=hracKlikl(this)></div>
+            <div class="tile" onClick=hracKlikl(this)></div>
+            <div class="tile" onClick=hracKlikl(this)></div>
+            <div class="tile" onClick=hracKlikl(this)></div>
+            <div class="tile" onClick=hracKlikl(this)></div>
+            <div class="tile" onClick=hracKlikl(this)></div>
+            <div class="tile" onClick=hracKlikl(this)></div>
+            <div class="tile" onClick=hracKlikl(this)></div>
+            <div class="tile" onClick=hracKlikl(this)></div>
+            <div class="tile" onClick=hracKlikl(this)></div>
+            <div class="tile" onClick=hracKlikl(this)></div>
+            <div class="tile" onClick=hracKlikl(this)></div>
+            <div class="tile" onClick=hracKlikl(this)></div>
+            <div class="tile" onClick=hracKlikl(this)></div>
+            <div class="tile" onClick=hracKlikl(this)></div>
+            <div class="tile" onClick=hracKlikl(this)></div>
+            <div class="tile" onClick=hracKlikl(this)></div>
+            <div class="tile" onClick=hracKlikl(this)></div>
+            <div class="tile" onClick=hracKlikl(this)></div>
+            <div class="tile" onClick=hracKlikl(this)></div>
+            <div class="tile" onClick=hracKlikl(this)></div>
+            <div class="tile" onClick=hracKlikl(this)></div>
+            <div class="tile" onClick=hracKlikl(this)></div>
+            <div class="tile" onClick=hracKlikl(this)></div>
+            <div class="tile" onClick=hracKlikl(this)></div>
+            <div class="tile" onClick=hracKlikl(this)></div>
+            <div class="tile" onClick=hracKlikl(this)></div>
+            <div class="tile" onClick=hracKlikl(this)></div>
+            <div class="tile" onClick=hracKlikl(this)></div>
+            <div class="tile" onClick=hracKlikl(this)></div>
+            <div class="tile" onClick=hracKlikl(this)></div>
+            <div class="tile" onClick=hracKlikl(this)></div>
+            <div class="tile" onClick=hracKlikl(this)></div>
+            <div class="tile" onClick=hracKlikl(this)></div>
+            <div class="tile" onClick=hracKlikl(this)></div>
+            <div class="tile" onClick=hracKlikl(this)></div>
+            <div class="tile" onClick=hracKlikl(this)></div>
+            <div class="tile" onClick=hracKlikl(this)></div>
+            <div class="tile" onClick=hracKlikl(this)></div>
+            <div class="tile" onClick=hracKlikl(this)></div>
+            <div class="tile" onClick=hracKlikl(this)></div>
+            <div class="tile" onClick=hracKlikl(this)></div>
+            <div class="tile" onClick=hracKlikl(this)></div>
+            <div class="tile" onClick=hracKlikl(this)></div>
+            <div class="tile" onClick=hracKlikl(this)></div>
+            <div class="tile" onClick=hracKlikl(this)></div>
+            <div class="tile" onClick=hracKlikl(this)></div>
+            <div class="tile" onClick=hracKlikl(this)></div>
+            <div class="tile" onClick=hracKlikl(this)></div>
+            <div class="tile" onClick=hracKlikl(this)></div>
+            <div class="tile" onClick=hracKlikl(this)></div>
+            <div class="tile" onClick=hracKlikl(this)></div>
+            <div class="tile" onClick=hracKlikl(this)></div>
+            <div class="tile" onClick=hracKlikl(this)></div>
+            <div class="tile" onClick=hracKlikl(this)></div>
+            <div class="tile" onClick=hracKlikl(this)></div>
+            <div class="tile" onClick=hracKlikl(this)></div>
+            <div class="tile" onClick=hracKlikl(this)></div>
+            <div class="tile" onClick=hracKlikl(this)></div>
+            <div class="tile" onClick=hracKlikl(this)></div>
+            <div class="tile" onClick=hracKlikl(this)></div>
+            <div class="tile" onClick=hracKlikl(this)></div>
+            <div class="tile" onClick=hracKlikl(this)></div>
+            <div class="tile" onClick=hracKlikl(this)></div>
+            <div class="tile" onClick=hracKlikl(this)></div>
+            <div class="tile" onClick=hracKlikl(this)></div>
+            <div class="tile" onClick=hracKlikl(this)></div>
+            <div class="tile" onClick=hracKlikl(this)></div>
+            <div class="tile" onClick=hracKlikl(this)></div>
+            <div class="tile" onClick=hracKlikl(this)></div>
+            <div class="tile" onClick=hracKlikl(this)></div>
+            <div class="tile" onClick=hracKlikl(this)></div>
+            <div class="tile" onClick=hracKlikl(this)></div>
+            <div class="tile" onClick=hracKlikl(this)></div>
+            <div class="tile" onClick=hracKlikl(this)></div>
+            <div class="tile" onClick=hracKlikl(this)></div>
+            <div class="tile" onClick=hracKlikl(this)></div>
+            <div class="tile" onClick=hracKlikl(this)></div>
+            <div class="tile" onClick=hracKlikl(this)></div>
+            <div class="tile" onClick=hracKlikl(this)></div>
+            <div class="tile" onClick=hracKlikl(this)></div>
+            <div class="tile" onClick=hracKlikl(this)></div>
+            <div class="tile" onClick=hracKlikl(this)></div>
+            <div class="tile" onClick=hracKlikl(this)></div>
+            <div class="tile" onClick=hracKlikl(this)></div>
+            <div class="tile" onClick=hracKlikl(this)></div>
+            <div class="tile" onClick=hracKlikl(this)></div>
+            <div class="tile" onClick=hracKlikl(this)></div>
+            <div class="tile" onClick=hracKlikl(this)></div>
+            <div class="tile" onClick=hracKlikl(this)></div>
+            <div class="tile" onClick=hracKlikl(this)></div>
+        </div>
+    </main>
+</body>
+<script>
+    function randomNumber(min,max){
+        return Math.floor(Math.random()*(max-min+1)+min);
+    } 
+    let game = false
+    let mines = []
+    let amountOfMines = 50
+    let tiles = document.getElementsByClassName("tile")
+    let tileArray = Array.from(tiles)
+
+    for (let index = 0; index < tileArray.length; index++) {
+        tiles[index].setAttribute("id",index)
+    }
+    tileArray.forEach(element => {
+        element.attributes.value = "0"
+    });
+
+    function hracKlikl(tile){
+        if (tile.innerHTML == "x") {
+            document.getElementById("table").innerHTML = "You died!";
+            document.getElementById("table").style.color = "white";
+            console.log("Klikl jsi na minu!")
+        }
+        if (!game) {
+                for (let i = 0; i < amountOfMines; i++) {
+                    let rnumber = randomNumber(0,399);
+                    while (mines.includes(rnumber) && mines.length !== amountOfMines && rnumber != tile.id) {
+                        rnumber = randomNumber(0,399);
+                    }
+                mines.push(rnumber)
+                console.log(rnumber)
+            }
+            console.log(mines)
+        }
+        else{
+            checkTile(tile)
+        }
+        mines.forEach(element => {
+            tiles[element].innerHTML = "x"
+        });
+        tileArray.forEach(element => {
+            if (element.innerHTML != "x" && !game) {
+                element.innerHTML = checkSecondaryTile(element)
+            }
+            else{}
+            if (element.innerHTML == "0" && !game) {
+                element.innerHTML = "";
+            }
+        });
+        game=true;
+    }
+    function checkTile(selectedTile) {
+        console.log(selectedTile.id)
+        selectedTile.innerHTML =+ (checkSecondaryTile(selectedTile));
+        if (selectedTile.innerHTML == "x"){
+            !game;
+            document.write("Haha")
+        }
+        else{
+            let okoli = [
+                tiles[selectedTile.id - 20],
+                tiles[parseInt(selectedTile.id) + 20],
+                tiles[selectedTile.id - 19],
+                tiles[parseInt(selectedTile.id) + 19],
+                tiles[selectedTile.id - 21],
+                tiles[parseInt(selectedTile.id) + 21],
+                tiles[selectedTile.id - 1],
+                tiles[parseInt(selectedTile.id) + 1]
+            ]
+            if (selectedTile.innerHTML == "0" || selectedTile.innerHTML == ""){
+                okoli.forEach(element => {
+                    if (element != null) {
+                            element.classList.add("revealed")
+                        if (element.innerHTML == "x") {
+                        }
+                        else if(element.innerHTML == ""){
+                            checkTile(element)
+                        }
+                    }
+                });
+            }
+            else{
+                selectedTile.classList.add("revealed")
+            }
+        }
+    }
+    function checkSecondaryTile(selectedTile) {
+        console.log(selectedTile.id)
+            let pocetMin = 0
+            let okoli = [
+                tiles[selectedTile.id - 20],
+                tiles[parseInt(selectedTile.id) + 20],
+                tiles[selectedTile.id - 19],
+                tiles[parseInt(selectedTile.id) + 19],
+                tiles[selectedTile.id - 21],
+                tiles[parseInt(selectedTile.id) + 21],
+                tiles[selectedTile.id - 1],
+                tiles[parseInt(selectedTile.id) + 1]
+            ]
+            okoli.forEach(element => {
+                if (element != null) {
+                    if (element.innerHTML == "x") {
+                        pocetMin++
+                    }
+                }
+                else{
+                }
+                console.log(pocetMin)
+            });
+
+            return pocetMin;
+        }
+        let cas = 0;
+        let sekundy = 0;
+        let minuty = 0;
+        let odpocet = false;
+        let mmezera = 0;
+        let cmezera = 0;
+        let smezera = 0;
+        (function(){
+            sekundy++
+            if (sekundy == 60) {
+                sekundy = 0;
+                minuty++
+            }
+            if (cas < 10) {
+                cmezera = 0;
+            }
+            else{
+                cmezera = ""
+            }
+            if (sekundy < 10) {
+                smezera = 0;
+            }
+            else{
+                smezera = ""
+            }
+            if (minuty < 10) {
+                mmezera = 0;
+            }
+            else{
+                mmezera = ""
+            }
+            document.getElementById("casovac").innerHTML = mmezera + minuty + ": " + smezera + sekundy;
+        
+            setTimeout(arguments.callee, 1000);
+        })();
+</script>
+</html>

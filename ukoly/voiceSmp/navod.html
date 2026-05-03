@@ -1,0 +1,276 @@
+<!DOCTYPE html>
+<html lang="cz">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Voice SMP - Návod</title>
+    <link rel="shortcut icon" href="logo2.png" type="image/x-icon">
+    <link rel="stylesheet" href="style-tutorial.css">
+</head>
+<body>
+    </div>
+    <div class="menu">
+        <a href="index.html"><div class="menu-button">
+            Zpět
+        </div></a>
+        <div class="menu-spacer"></div>
+        <div class="menu-logo"></div>
+        <div class="menu-logo-text"></div>
+    </div>
+    <div class="content">
+        <div class="content-spacer"></div>
+        <div class="post-title">
+            Návod
+        </div>   
+        <div class="post-text">
+            Vzhledem ke komplexicitě módu Mumble je bohužel instalace potřebného softwaru 
+            mírně složitější než u obvyklých serverů. 
+            <br> 
+            <br>
+            Proto jsme zde pro vás připravili detailní návod, 
+            jak vše zprovoznit. Není to nic těžkého, do 10 minut budete mít vše hotové a s jakýkoliv problémem nám můžete napsat!
+            <br>
+            <div class="kontakty-header">
+                <button onclick="kontakty()" id="button1">Kontakty</button>
+            </div>
+            <iframe class="kontakty-content" id="content1" scrolling="no" src="kontakty.html">
+            </iframe>
+            <div class="kontakty-footer">
+                <div></div>
+            </div>
+            <p>Potřebné soubory</p>
+            <ul>
+                <li>Forge installer 1.16.5 <a href="http://files.minecraftforge.net/maven/net/minecraftforge/forge/index_1.16.5.html">zde</a> - Minecraft, který podporuje módy. </li>
+                <li>Create 1.16.5 <a href="https://www.curseforge.com/minecraft/mc-mods/create/files/3167531">zde</a></li>
+                <li>Mumble link 1.16.5 <a href="https://www.curseforge.com/minecraft/mc-mods/mumblelink/files/3196471">zde</a> - Mód na propojení voice chatu. </li>
+                <br>
+                <li>Mumble <a href="https://www.mumble.com/">zde</a> - Samostatný program, zodpovědný za voice chat.</li>
+            </ul>
+            <br>
+            <br>
+            <div class="post-title">
+                Forge
+            </div>   
+            Po stažení všech souborů nainstalujeme minecraft verzi, která podporuje módy: 
+            <ul>
+                <li><p>Forge 1.16.5-36.0.22</p></li>
+            </ul>
+            <img class="tut" src="screeny/forge.PNG" alt="Forge">
+            <br>
+            Forge je potřeba <span>nainstalovat</span>, po spuštění se zobrazí možnosti instalace:
+            <br>
+            <img class="tut" src="screeny/forgeIn1.PNG" alt="Forge">
+            <br>
+            Nechte vybraný <span>Install client</span>, umístění minecraftu by mělo být ze základu správně. Klineme na <span>ok</span>:
+            <br>
+            <img class="tut" src="screeny/forgeIn2.PNG" alt="">
+            <br>
+            Instalování Forge Minecraftu bude chvíli trvat, zobrazí se zpráva, že instalace byla úspěšná.
+            <br>
+            <br>
+            Následně zapněte jakýkoliv launcher, který máte a zapněte verzi minecraftu <span>Forge</span>. První zapnutí této verze připraví důležité soubory a složky.
+            <br>
+            <br>
+            Po tom, co se minecraft zapne a načte by mělo hlavní menu vypadat nějak takto:
+            <br>
+            <img class="tut" src="screeny/forgeIn3.PNG" alt="">
+            <br>
+            Po načtení můžeme minecraft zas vypnout a máme první krok za sebou!
+            <div class="post-title">
+                Mumble
+            </div>   
+            <br>
+            Nyní ten nejsložitější krok: <span>Mumble</span>.
+            <br>
+            <br>
+            Bohužel, minecraft v době vytváření serveru nemá žadný mód pro voice chat vestavěný v sobě, proto je potřeba používat externí voice chat přes program.
+            <br>
+            <img class="tut" src="screeny/mumble.PNG" alt="">
+            <br>
+            Nejdříve nainstalujeme mumble, spustí se standardní instalační okno:
+            <br>
+            <img class="tut" src="screeny/mumbleIn1.PNG" alt="">
+            <br>
+            klikneme na <span>Další</span>, zaškrtneme souhlas s podmínkami a znovu klikneme na další:
+            <br>
+            <img class="tut" src="screeny/mumbleIn2.PNG" alt="">
+            <br>
+            Dále se zobrazí několik standardních oken instalace, zde se nic měnit nemusí ale můžete změnit kam se má Mumble nainstalovat:
+            <br>
+            <img class="tut" src="screeny/mumbleIn3.PNG" alt="">
+            <br>
+            <img class="tut" src="screeny/mumbleIn4.PNG" alt="">
+            <br>
+            <img class="tut" src="screeny/mumbleIn5.PNG" alt="">
+            <br>
+            Po tom co kliknete na <span>Dokončit</span> by se vám měl zapnout Mumble:
+            <br>
+            <div class="post-title">
+                Nastavování Mumble
+            </div>
+            <br>
+            Po tom co se mumble zapne, ukáže se okno na testování zvuku, jednoduše se dá přeskoči a není potřeba nic měnit.
+            <br>
+            <br>
+            Aby voice chat fungoval a aby byl správně nastaven. <br> Musíme jít do nastavení:
+            <br>
+            <img class="tut" src="screeny/mumbleSet0.PNG" alt="">
+            <br>
+            Následně musíme jít do <span>Výstupu zvuku</span>:
+            <br>
+            <img class="tut" src="screeny/mumbleSet1.PNG" alt="">
+            <br>
+            A teď je potřeba nastavit následující nastavení zvuku zvýrazněné na obrázku:
+            <ul>
+                <li><span> Zaškrtnutý</span> poziční zvuk</li>
+                <li><span> Zaškrtnutá</span> sluchátka u pozičního zvuku</li>
+                <li>Minimální vzdálenost - <span> cca 1m</span></li>
+                <li>Bloom - <span> cca 150%</span></li>
+                <li>Maximální vzdálenost - <span> cca 30m</span></li>
+                <li>Minimální hlasitost - <span style="color: red;"> přesně 0%</span></li>
+            </ul>
+            <br>
+            <img class="tut" src="screeny/mumbleSet2.PNG" alt="">
+            <br>
+            Toto nastavení je na základě našich zkušeností pro zážitek nejlepší.
+            <br>
+            Pokud máte jakýkoliv problém, klidně nám napište!
+            <br>
+            <div class="kontakty-header">
+                <button onclick="kontakty2()" id="button2">Kontakty</button>
+            </div>
+            <iframe class="kontakty-content" id="content2" scrolling="no" src="kontakty.html">
+            </iframe>
+            <div class="kontakty-footer">
+                <div></div>
+            </div>
+            <br>
+            <br>
+            Teď se přesuneme na záložku <span>Zásuvné moduly</span>
+            <br>
+            <br>
+            <img src="screeny/mumbleSet3.PNG" alt="">
+            <br>
+            <br>
+            Nyní musíme nastavit, aby mumble detekoval voice chat v minecraftu:
+            <br>
+            <br>
+            <img src="screeny/mumbleSet4.PNG" alt="">
+            <br>
+            <br>
+            A tady musíme zaškrtnout <span style="color: red;">Propojit s hrou a vysílat pozici</span>
+            <br>
+            Bez toho voice chat nebude fungovat
+            <br>
+            <br>
+            No, a máme nejšložitější část za sebou! Teď nás čekají poslední dva kroky:
+            <ul>
+                <li>Dát stažené módy do minecraftu</li>
+                <li>Přidat a připojit se na Mumble server</li>
+            </ul>
+            <br>
+            <div class="post-title">
+                Módy
+            </div>
+            Máme sice nainstalovaný Forge minecraft, ale zatím v něm nejsou žádné módy.
+            <br>
+            <br>
+            První krok je si otevřít soubory minecraftu.
+            <br> 
+            <br>
+            Otevřeme dokumenty a nahoru do cesty umístění napíšeme:
+            <br>
+            <br>
+            <span>%appdata%</span>
+            <br>
+            <br>
+            A stiskneme Enter
+            <br>
+            <img src="screeny/mcIn1.PNG" alt="">
+            <br>
+            Měla by se otevřít složka Roaming, v té bude složka <span>.minecraft</span>, tu otevřeme:
+            <br>
+            <img src="screeny/mcIn2.PNG" alt="">
+            <br>
+            Ve složce minecraftu bychom měli mít složku mods, pokud ne vytvořte jí
+            <br>
+            <img src="screeny/mcIn3.PNG" alt="">
+            <br>
+            Následně do ní vložte oba módy co jste na začátku stáhli:
+            <ul>
+                <li>create-mc1.16.3_v0.3e</li>
+                <li>mumblelink-1.16.5-4.6.3</li>
+            </ul>
+            Složka mods by pak měla vypdat nějak takto:
+            <br>
+            <img src="screeny/mcIn4.PNG" alt="">
+            <br>
+            Tak, a to byl předposlední krok.
+            <br>
+            <div class="post-title">
+                Mumble server
+            </div>
+            Teď už se jen stačí připojit na voice chat server. 
+            Bohužel Mubmle nedokáže fungovat přes minecraft server a tak se musíte zvlášť připojovat na server v minecraftu a zároveň na server v Mumble.
+            <br>
+            <br>
+            Nyní si přidáme do mumble server, podobně jako v minecraftu:
+            <br>
+            <br>
+            Klikneme na tlačítko <span>Server</span> na horním panelu a pak na tlačítko <span>Connect... </span>:
+            <br>
+            <br>
+            <img src="screeny/mumbleServ2.PNG" alt="">
+            <br>
+            <br>
+            Ukáže se okno se servery, zde klikneme na tlačítko <span>Přidat nový...</span> :
+            <br>
+            <br>
+            <img src="screeny/mumbleServ1.PNG" alt="">
+            <br>
+            <br>
+            Zde zadáme údaje serveru, jméno a název serveru:
+            <ul>
+                <li>Adresa: <span>mumble-de.cleanvoice.com</span></li>
+                <li>Port: <span>39482</span></li>
+                <li>Uživatelské jméno: <span style="color: red;">váš minecraft nickname</span></li>
+                <li>Jmenovka může zůstat stejná, je to název, pod kterým se server uloží</li>
+            </ul>
+            <br>
+            <br>
+            Teď můžete otestovat, zda-li Mumble funguje správně, zapněte minecraft 
+            a připojte se na server v Mumble, následně se stačí připojit na server, nebo na singleplayer svět v minecraftu,
+            pokud vám Mumble napíše do konzole <span>Minecraft propojen</span>
+            <br>
+            <br>
+            <img src="screeny/mumbleSet6.PNG" alt="">
+            <br>
+            <br>
+            ...tak máte hotovo a můžete začít hrát!
+            <br>
+            <br>
+            Ip adresa minecraft serveru:
+            <br>
+            <br>
+            <span>157.90.34.58:25753</span>
+            <br><br>
+            ...pokud vám něco nefunguje, nebo si jen nejste jistí, jsme více než ochotni vám pomoct, stačí napsat!
+            <br>
+            <br>
+            <div class="kontakty-header">
+                <button onclick="kontakty3()" id="button3">Kontakty</button>
+            </div>
+            <iframe class="kontakty-content" id="content3" scrolling="no" src="kontakty.html">
+            </iframe>
+            <div class="kontakty-footer">
+                <div></div>
+            </div>
+        </div>
+    </div>
+    <a href="navod-en.html"><div class="jazyk">
+        EN
+    </div></a>
+</body>
+<script src="kontakty.js"></script>
+</html>

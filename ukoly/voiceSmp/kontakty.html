@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="menu.css">
+</head>
+<body class="kontakty-body">
+    <input type="text" style="position: absolute; opacity: 0;" value="Pilchström#4378" id="pilchdiscord">
+    <input type="text" style="position: absolute; opacity: 0;" value="DanMakesStuff#2503" id="dandiscord">    
+    <input type="text" style="position: absolute; opacity: 0;" value="157.90.34.58:25753" id="ip">
+    <input type="text" style="position: absolute; opacity: 0;" value="dann-cz@email.cz" id="email">
+        <div class="kontakt-outside">
+            <div class="icon" onclick="pilchdiscord()">
+                <span class="tooltiptext2" id="myTooltip">Copied!</span><img src="discord.png" width="35px" alt=""></div>
+            <div class="kontakt-name">
+                Pilchström#4378
+            </div>
+            <input type="text" style="position: absolute; opacity: 0;" value="Pilchström#4378" id="pilchdiscord">
+            <script>
+                function pilchdiscord(){
+                    var copyText = document.getElementById("pilchdiscord");
+                    copyText.select();
+                    copyText.setSelectionRange(0, 99999);
+                    document.execCommand("copy");
+                }
+            </script>
+        </div>
+        <div class="kontakt-outside">
+            <a href="https://www.instagram.com/danmakesstuff_/" target="_blank"><div class="icon">
+                <img src="instagram.png" width="35px" alt="">
+            </div></a>
+            <div class="kontakt-name">
+                 @danmakesstuff_
+            </div>
+        </div>
+        <div class="kontakt-outside">
+            <div class="icon" onclick="dandiscord()">
+                <span class="tooltiptext2" id="myTooltip">Copied!</span><img src="discord.png" width="35px" alt=""></div>
+            <div class="kontakt-name">
+                DanMakesStuff#2503
+            </div>
+            <input type="text" style="position: absolute; opacity: 0;" value="DanMakesStuff#2503" id="dandiscord">
+            <script>
+                function dandiscord(){
+                    var copyText = document.getElementById("dandiscord");
+                    copyText.select();
+                    copyText.setSelectionRange(0, 99999);
+                    document.execCommand("copy");
+                }
+            </script>
+        </div>
+        <hr>
+        <div class="kontakt-outside">
+            <div class="icon" onclick="ip()" style="background-color: rgb(233, 159, 0); border-color: rgb(158, 108, 0);">
+                <span class="tooltiptext" id="myTooltip">Copied!</span><img src="minecraft.png" width="35px" alt=""></div>
+            <div class="kontakt-name">
+                157.90.34.58:25753
+            </div>
+            <input type="text" style="position: absolute; opacity: 0;" value="157.90.34.58:25753" id="ip">
+            <script>
+                function ip(){
+                    var copyText = document.getElementById("ip");
+                    copyText.select();
+                    copyText.setSelectionRange(0, 99999);
+                    document.execCommand("copy");
+                }
+            </script>
+        </div>
+        <div class="kontakt-outside">
+            <a href="https://discord.gg/GrEazms7ZY" target="_blank">
+            <div class="icon" style="background-color: rgb(233, 159, 0); border-color: rgb(158, 108, 0);">
+                <img src="discord.png" width="35px" alt=""></div></a>
+            <div class="kontakt-name">
+                Voice SMP
+            </div>
+        </div>
+        <div class="kontakt-outside">
+            <div class="icon" onclick="mail()" style="background-color: rgb(233, 159, 0); border-color: rgb(158, 108, 0);">
+                <span class="tooltiptext" id="myTooltip">Copied!</span>
+                <img src="email.png" width="35px" alt="">
+            </div>
+            <div class="kontakt-name">
+                dann-cz@email.cz
+            </div>
+            <input type="text" style="position: absolute; opacity: 0;" value="info@voicesmp.cz" id="email">
+            <script>
+                function mail(){
+                    var copyText = document.getElementById("email");
+                    copyText.select();
+                    copyText.setSelectionRange(0, 99999);
+                    document.execCommand("copy");
+                }
+            </script>
+        </div>
+    </div>
+</body>
+</html>

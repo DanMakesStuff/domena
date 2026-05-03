@@ -1,0 +1,378 @@
+<!DOCTYPE html>
+<html lang="cz">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Voice SMP</title>
+    <link rel="shortcut icon" href="logo2.png" type="image/x-icon">
+    <link rel="stylesheet" href="style.css">
+    
+</head>
+<body>
+    <input type="text" style="position: absolute; opacity: 0;" value="Pilchström#4378" id="pilchdiscord">
+    <input type="text" style="position: absolute; opacity: 0;" value="DanMakesStuff#2503" id="dandiscord">    
+    <input type="text" style="position: absolute; opacity: 0;" value="157.90.34.58:25753" id="ip">    
+    <input type="text" style="position: absolute; opacity: 0;" value="dann-cz@email.cz" id="email">
+
+    <div class="backg1"></div>
+    <div class="backg2"></div>
+    <div class="backg3">
+        <h1 class="subtitle">Minecraft, jinak.</h1>
+    </div>
+    <div class="backg-spacer"></div>
+    <div class="spacer"></div>
+    <div class="menu" onclick="otevriMenu(this)">
+        <div class="menu-spacer"></div>
+        <div class="menu-logo"></div>
+        <div class="menu-logo-text"></div>
+        <div class="menu-button" onclick="uvod()">
+            Úvod
+        </div>
+        <div class="menu-button" onclick="mody()">
+            Módy
+        </div>
+        <div class="menu-button" onclick="jak()">
+            Návod
+        </div>
+        <div class="menu-button" onclick="info()">
+            Info
+        </div>
+    </div>
+        <div class="post" id="uvod">
+            <div class="content">
+                <div class="content-spacer"></div>
+                <div class="post-title">
+                    Úvod
+                </div>   
+                <div class="post-text">
+                    Příjde vám, že Minecraft už nenabízí nic nového? Vše začíná být během karantény ohrané a nezáživné?
+                    <br>
+                    <br>
+                    S tím samým problémem jsme se potýkali i my.
+                    <br>
+                    Proto vznikl Voice SMP! První původem Český server s voice chatem inspirovaný populární zahraniční sérií 
+                    <a href="https://epicsmp.fandom.com/wiki/EpicSMP_Wiki" target="_blank">Epic SMP</a>, která nás velmi zaujala a chtěli bychom její unikátní vlastnosti přinést obyčejným hráčům.
+                    <br>
+                    <br>
+                    Za účelem udržení přátelské a bezstarostné komunity server používá <span>whitelist</span>.
+                    <br>
+                    <br>
+                    Jestli si u nás chceš zahrát, musíš o tom informovat některého člena našeho týmu (na jakékoli zmíněné <a href="#info"> sociální síti</a>). Rádi tě uvítáme v naší komunitě, dokud se <span>budeš bavit </span> a zároveň budeš jednat rozumně.
+                    <br>
+                    <br><span id="warez">(Jo a taky nemusíš mít zakoupenou verzi hry, aby jsi si u nás zahrál)</span>
+                </div>
+            </div>
+        </div>
+        <div class="post" id="update">
+            <div class="content">
+                <div class="content-spacer"></div>
+                <div class="post-title">
+                    Nový update!
+                </div>   
+                <div class="post-text">
+                    Je to tady! Dlouho očekávaný update! Zde jsou všechny novinky:
+                    <ul>
+                        <li><span>Iron chests</span> - vetší chestky, retextoruvány, aby sedly lépe do vzhledu 1.16</li>
+                        <li><span>Nový serverový texturepack!</span></li>
+                        <li><span>Netherite Plus</span> mód - přidává mnoho nástrojů v netheritové verzi</li>
+                        <li>Optifine je nyní povinný, aby fungoval resourcepack správně</li>
+                        <li><span>Twitch emoty v chatu!</span> poggers kappa residentsleeper trihard feelsbadman pepega</li>
+                        <li>Slyšeli jste o <span>rEncoinu?</span> Je to taková nová měna, je velmi stabilní, již dnes ve vašem nejbližším rEnStopu...</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <div class="post" style="background-color: black;">
+            <div class="content-video content">
+                <div class="post-title-video post-title">
+                    Duležité info
+                </div>  
+                <div class="post-video-subtext">
+                    Server začal v<span> pátek 19.3.</span> ! Pro nejnovější informace a důležité oznámení doporučujeme navštívit náš Discord, naleznete tam i náš team a dotazník na přidání do whitelistu!
+                    <br>
+                    <div class="kontakt-outside">
+                        <a href="https://discord.gg/GrEazms7ZY" target="_blank">
+                        <div class="icon" style="background-color: rgb(233, 159, 0); border-color: rgb(158, 108, 0);">
+                            <img src="discord.png" width="35px" alt=""></div></a>
+                        <div class="kontakt-name">
+                            Voice SMP
+                        </div>
+                    </div>
+                </div> 
+                <div class="post-video">
+                    <iframe src="https://www.youtube.com/embed/HTogxkJhyp0" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                </div>
+            </div>
+        </div>
+        <div class="post" id="mody">
+            <div class="content">
+                <div class="content-spacer"></div>
+                <div class="post-title">
+                    Módy
+                </div>   
+                <div class="post-text">
+                    Server zatím má jen dva módy. Časem plánujeme postupně módy přidávat.
+                    <ul>
+                        <li>
+                            <p>Create</p>
+                            Mód Create je propracovaný technický mód, který mimo jíné dokáže pohybovat celými stavbami.
+                        </li>
+                        <br>
+                        <li>
+                            <p>Mumble</p>
+                            Mód Mumble umožňuje hráčům využívat proximity chat, server byl vytvořen pro tento mód. 
+                        </li>
+                        <br>
+                        <li>
+                            <p>Ostatní módy</p>
+                            Ostatní módy najdete v sekci <a href="#update">Update</a> a na našem <a href="">Discordu</a>, kde lze stáhnout všechny módy naráz.
+                        </li>
+                    </ul>    
+                </div>
+            </div>
+        </div>
+        <div class="post" id="jak">
+            <div class="content">
+                <div class="content-spacer"></div>
+                <div class="post-title">
+                    Jak se připojit
+                </div>   
+                <div class="post-text">
+                    Vzhledem ke komplexicitě módu Mumble je bohužel instalace potřebného softwaru 
+                    náročnější než u obvyklých serverů. 
+                    <br> 
+                    Připravili jsme pro vás zde návod, 
+                    jak vše zprovoznit, do 10 až 20 minut si budete moct zahrát na 
+                    serveru s ostatními!
+                    <p>Potřebné soubory</p>
+                    <ul>
+                        <li>Forge installer 1.16.5 <a target="_blank" href="http://files.minecraftforge.net/maven/net/minecraftforge/forge/index_1.16.5.html">zde</a> - Minecraft, který podporuje módy. </li>
+                        <li>Create 1.16.5 <a target="_blank" href="https://www.curseforge.com/minecraft/mc-mods/create/files/3167531">zde</a></li>
+                        <li>Mumble link 1.16.5 <a target="_blank" href="https://www.curseforge.com/minecraft/mc-mods/mumblelink/files/3196471">zde</a> - Mód na propojení voice chatu. </li>
+                        <br>
+                        <li>Mumble <a target="_blank" href="https://www.mumble.com/">zde</a> - Samostatný program, zodpovědný za voice chat.</li>
+                    </ul>
+                    <a href="navod.html"><button>
+                        Návod
+                    </button></a>
+                </div>
+            </div>
+        </div>
+    <div class="footer" id="info">
+        <div class="footer-title">
+            Kontakty
+        </div>
+        <div class="footer-content">
+            <div class="kontakt-outside">
+                <div class="icon" onclick="pilchdiscord()">
+                    <span class="tooltiptext2" id="myTooltip">Zkopírováno!</span><img src="discord.png" width="35px" alt=""></div>
+                <div class="kontakt-name">
+                    Renkity
+                </div><script>
+                    function pilchdiscord(){
+                        var copyText = document.getElementById("pilchdiscord");
+                        copyText.select();
+                        copyText.setSelectionRange(0, 99999);
+                        document.execCommand("copy");
+                    }
+                </script>
+            </div>
+            <div class="kontakt-outside">
+                <a href="https://www.instagram.com/danmakesstuff_/" target="_blank"><div class="icon">
+                    <img src="instagram.png" width="35px" alt="">
+                </div></a>
+                <div class="kontakt-name">
+                    DanMakesStuff
+                </div>
+            </div>
+            <div class="kontakt-outside">
+                <div class="icon" onclick="dandiscord()">
+                    <span class="tooltiptext2" id="myTooltip">Zkopírováno!</span><img src="discord.png" width="35px" alt=""></div>
+                <div class="kontakt-name">
+                    DanMakesStuff
+                </div><script>
+                    function dandiscord(){
+                        var copyText = document.getElementById("dandiscord");
+                        copyText.select();
+                        copyText.setSelectionRange(0, 99999);
+                        document.execCommand("copy");
+                    }
+                </script>
+            </div>
+            <div class="kontakt-outside">
+                <div class="icon" onclick="ip()" style="background-color: rgb(233, 159, 0); border-color: rgb(158, 108, 0);">
+                    <span class="tooltiptext" id="myTooltip">Zkopírováno!</span><img src="minecraft.png" width="35px" alt=""></div>
+                <div class="kontakt-name">
+                    157.90.34.58:25753
+                </div><script>
+                    function ip(){
+                        var copyText = document.getElementById("ip");
+                        copyText.select();
+                        copyText.setSelectionRange(0, 99999);
+                        document.execCommand("copy");
+                    }
+                </script>
+            </div>
+            <div class="kontakt-outside">
+                <a href="https://discord.gg/GrEazms7ZY" target="_blank">
+                <div class="icon" style="background-color: rgb(233, 159, 0); border-color: rgb(158, 108, 0);">
+                    <img src="discord.png" width="35px" alt=""></div></a>
+                <div class="kontakt-name">
+                    Voice SMP
+                </div>
+            </div>
+            <div class="kontakt-outside">
+                <div class="icon" onclick="mail()" style="background-color: rgb(233, 159, 0); border-color: rgb(158, 108, 0);">
+                    <span class="tooltiptext" id="myTooltip">Zkopírováno!</span>
+                    <img src="email.png" width="35px" alt="">
+                </div>
+                <div class="kontakt-name">
+                    dann-cz@email.cz
+                </div><script>
+                    function mail(){
+                        var copyText = document.getElementById("email");
+                        copyText.select();
+                        copyText.setSelectionRange(0, 99999);
+                        document.execCommand("copy");
+                    }
+                </script>
+            </div>
+        </div>
+        <div class="someFooter">
+            <div class="footer-title">
+                Credits
+            </div>
+            <div class="footer-content2">
+                <div class="credits1">
+                    Hosting: <span>Batcore.eu</span>
+                    <br>
+                    <br>
+                    Mc Server: <span>DanMakesStuff</span>, <span>Renkity</span>
+                    <br>
+                    <br>
+                    Webové stránky: <span>DanMakesStuff</span>
+                    <br>
+                    <br>
+                </div>
+                <div class="credits2">
+                    Dabing (propagační video): <span>Renkity</span>, <span>Petros757</span>, <span>DanMakesStuff</span>, <span>TomanRi</span>, <span>Nazgul</span>
+                    <br>
+                    <br>
+                    Střih (propagační video): <span>TomanRi</span>
+                    <br>
+                    <br>
+                    Sponzor: <span>@Jakub.Jenik</span>
+                    <div class="credits">
+                        *moc díky celému týmu, sám bych to nezvládl. DanMakesStuff
+                    </div>
+                </div>
+                <div class="donate">
+                    <div class="footer-title">
+                        Donate
+                    </div>
+                    <p>
+                        Každá koruna nebo euro se hodí, <span>děkujeme</span>!
+                        <br>
+                        <br>
+                        Bankovní převod: <span>237222437/0600</span>
+                    </p>
+                    <br>
+                    <a href="https://www.paypal.com/paypalme/Kujeid" target="_blank"><div class="icon">
+                        <img src="paypal.png" width="35px" alt="">
+                    </div></a>
+                    <br>
+                </div>
+            </div>
+        </div>
+        <div class="footer-copyright">
+            Copyright © 2021 - DanMakesStuff | Všechna práva vyhrazena | Beta 0.7
+        </div>
+    </div>
+    <a href="index-en.html"><div class="jazyk">
+        EN
+    </div></a>
+</body>
+<script>
+    mybutton = document.querySelector("body > div.menu > div.menu-logo-text");
+    menu = document.querySelector("div.menu");
+    menuButton = document.querySelector("div.menu-button");
+    menuButton2 = document.querySelector("body > div.menu > div:nth-child(5)")
+    menuButton3 = document.querySelector("body > div.menu > div:nth-child(6)")
+    menuButton4 = document.querySelector("body > div.menu > div:nth-child(7)")
+    menuLogo = document.querySelector("div.menu-logo");
+    menutext = document.querySelector("div.menu-logo-text");
+    window.onscroll = function() {scrollFunction()};
+
+    function scrollFunction() {
+  if ((document.body.scrollTop > 300 &&  window.innerWidth > 900) ||
+     (document.documentElement.scrollTop > 300 &&  window.innerWidth > 900)) {
+        console.log("Zmenseno menu")
+      mybutton.style.transform = "translateX(60px) scaleX(1)";
+      menu.style.height = "65px";
+      
+      menuButton.style.height = "65px";
+      menuButton.style.fontSize = "32px";
+      menuButton.style.paddingTop = "10px";
+      menuButton2.style.height = "65px";
+      menuButton2.style.fontSize = "32px";
+      menuButton2.style.paddingTop = "10px";
+      menuButton3.style.height = "65px";
+      menuButton3.style.fontSize = "32px";
+      menuButton3.style.paddingTop = "10px";
+      menuButton4.style.height = "65px";
+      menuButton4.style.fontSize = "32px";
+      menuButton4.style.paddingTop = "10px";
+
+      menu.style.backgroundColor = "rgba(255, 255, 255, 0.1)";
+      menu.style.backdropFilter = "contrast(70%) blur(2px)"
+
+      menuLogo.style.height = "65px";
+      menuLogo.style.width = "65px";
+      menutext.style.height = "90px";
+      menutext.style.opacity = "1";
+  } else if (window.innerWidth > 900) {
+    mybutton.style.transform = "translateX(-5vw) scaleX(0)";
+    menu.style = null;
+    menuButton.style = null;
+    menuButton2.style = null;
+    menuButton3.style = null;
+    menuButton4.style = null;
+    menuLogo.style = null;
+    menutext.style = null;
+    console.log("zvetseno menu")
+  }
+}
+    function kontakty(){
+        document.querySelector("div.kontakty-content").style.height = "120px";
+        document.querySelector("div.kontakty-header button").onclick = kontaktyOff;
+    }
+    function kontaktyOff(){
+        document.querySelector("div.kontakty-content").style.height = "0vh";
+        document.querySelector("div.kontakty-header button").onclick = kontakty;
+    }
+    function jak(){
+        document.getElementById("jak").scrollIntoView({behavior: "smooth", block: "end"});
+    }
+    function uvod(){
+    document.getElementById("uvod").scrollIntoView({behavior: "smooth", block: "end"});
+}
+function mody(){
+    document.getElementById("mody").scrollIntoView({behavior: "smooth", block: "end"});
+}
+function info(){
+    document.getElementById("info").scrollIntoView({behavior: "smooth", block: "end"});
+}
+function otevriMenu(otevr){
+    if (window.innerWidth < 900 && otevr.style.height == ""){
+    otevr.style.height = "300px";
+    console.log("Oteviram menu")
+    }
+    else if(window.innerWidth < 900 && otevr.style.height == "300px"){
+    otevr.style.height = null;
+    console.log("Zaviram menu")
+    }
+}
+</script>
+<script src="kontakty.js"></script>
+</html>

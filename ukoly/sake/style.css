@@ -1,0 +1,599 @@
+
+
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Reggae+One&display=swap');
+body{
+    margin: 0px;
+    padding: 0px;
+    z-index: 1;
+    position: relative;
+    overflow: overlay;
+    font-family: 'Montserrat';
+}
+
+
+@media (min-width: 900px){
+    ::-webkit-scrollbar {
+      width: 14px;
+      position: relative;
+      z-index: 0;
+    }
+    ::-webkit-scrollbar-track {
+    	background-color: transparent;
+        position: fixed;
+    }
+    ::-webkit-scrollbar-thumb {
+      background: #a3032699; 
+      border-radius: 8px;
+    }
+    ::-webkit-scrollbar-thumb:hover {
+      background: #e60737ff; 
+      border-radius: 8px;
+    }
+
+
+    h1{
+        color: black;
+        font-family: 'Reggae One', sans-serif;
+        font-size: 40px;
+        font-weight: 500;
+        margin-top: 10px;
+        margin-bottom: 10px;
+    }
+    h3{
+        color: #888;
+        font-weight: 400;
+        size: 15px;
+        font-family: 'Montserrat';
+    }
+
+
+    @keyframes line {
+        0% {
+            width: 0%;
+        }
+        30% {
+            width: 0%;
+        }
+        100% {
+            width: 80%;
+        }
+    }
+    @keyframes bottle{
+        0% {
+            opacity: 0;
+            transform: rotate(-10deg)  scale(0.5);
+        }
+        100% {
+            opacity: 1;
+            transform: rotate(20deg) scale(1);
+        }
+    }
+    @keyframes splash{
+        0% {
+            opacity: 0;
+            transform: rotate(-10deg)  scale(0.5);
+        }
+        25% {
+            opacity: 0;
+            transform: rotate(-10deg)  scale(0.5);
+        }
+        100% {
+            opacity: 1;
+            transform: rotate(10deg) scale(1);
+        }
+    }
+    @keyframes drop{
+        0% {
+            opacity: 0;
+            transform: rotate(-10deg)  scale(0.5);
+        }
+        25% {
+            opacity: 0;
+            transform: rotate(-10deg)  scale(0.5);
+        }
+        100% {
+            opacity: 1;
+            transform: rotate(15deg) scale(1);
+        }
+    }
+
+
+    .titlescreen{
+        float: left;
+        width: 100%;
+        height: 115vh;
+        overflow: hidden;
+    }
+    .text{
+        width: 25%;
+        height: 115vh;
+        float: left;
+        text-align: center;
+        font-family: 'Montserrat';
+    }
+    .text hr{
+        width: 80%;
+        color: #e60737;
+        border: none;
+        height: 4px;
+        background-color: #e60737;
+        animation: line 4s ease-in-out;
+    }
+    .text h1{
+        margin-top: 40vh;
+    }
+    .images{
+        display: block;
+        width: 50%;
+        height: 85vh;
+        float: left;
+        overflow: hidden;
+        padding-top: 15vh;
+    }
+    #splash{
+        animation: ease-in-out 2.2s splash;
+        transform: rotateZ(10deg);
+    }
+    #bottle{
+        animation: ease-in-out 2s bottle;
+        transform: rotateZ(20deg);
+    }
+    #drop{
+        animation: ease-in-out 2.5s drop;
+        transform: rotateZ(15deg);
+    }
+    .images img{
+        position: absolute;
+        width: 26vw;
+        margin-left: 12vw;
+        transform-origin: center center;
+    }
+
+
+
+    .screen{
+        float: left;
+        width: 100%;
+        height: 115vh;
+        overflow: hidden;
+        position: relative;
+        background-blend-mode: darken;
+    }
+    .screen .title{
+        height: 10vh;
+        width: 100%;
+        float: left;
+        position: relative;
+        z-index: 3;
+        padding-top: 10vh;
+    }
+    .title h1{
+        width: 100%;
+        text-align: center;
+        opacity: 4;
+    }
+    #vyroba{
+        position: absolute;
+        top: 0px;
+        left: 0px;
+        width: 100vw;
+        height: 115vh;
+        background-image: url(vyroba.jpg);
+        background-position-x: 100%;
+        background-position-y: center;
+        opacity: 0.65;
+    }
+    .uvod{
+        background-image: url(uvod.jpg) !important;
+        background-position-x: 140% !important;
+    }
+    .screen-gradient{
+        position: absolute;
+        z-index: 2;
+        top: -80vh;
+        left: -40vh;
+        width: 70vw;
+        height: 210vh;
+        transform: rotate(54deg);
+        background-color: #fafafac1;
+        backdrop-filter: blur(4px);
+    }
+    .title hr{
+        width: 15%;
+        color: #e60737;
+        border: none;
+        height: 4px;
+        background-color: #e60737;
+    }
+    .obsah{
+        width: 30%;
+        position: relative;
+        z-index: 4;
+        padding-top: 30vh;
+        padding-left: 10vw;
+        font-size: 20px;
+        font-family: 'Montserrat';
+        color: #444;
+    }
+    #ingredience .kontakty .subtitle h1{
+        color: #e60737;
+    }
+    #ingredience .kontakty .subtitle p{
+        margin-left: 15%;
+        width: 70%;
+        text-align: center !important;
+    }
+    .kontakty{
+        float: left;
+        width: 33.3%;
+        height: 100%;
+    }
+    .kontakty .subtitle{
+        float: left;
+        width: 100%;
+        height: 30px;
+        text-align: center;
+        padding-top: 20vh;
+        color: #e60737;
+    }
+    .subtitle hr{
+        color: #e60737;
+        background-color: #e60737;
+        width: 30%;
+        border: none;
+        height: 4px;
+    }
+    .subtitle h1{
+        font-size: 30px;
+    }
+    .subtitle ul{
+        list-style: none;
+        cursor: pointer;
+        text-align: left;
+        margin-left: 25%;
+        font-size: 20px;
+        font-weight: 400;
+    }
+    .subtitle li::before{
+        color: black;
+        content: "\2022";
+        display: inline-block;
+        width: 2em;
+        margin-left: -1em;
+    }
+    .subtitle p{
+        color: black;
+        cursor: pointer;
+        font-size: 20px;
+        font-weight: 400;
+        text-align: left;
+        margin-left: 25%;
+    }
+    .subtitle span{
+        color: #e60737;
+        font-size: 18px;
+        font-weight: 400;
+    }
+    #adresa p{
+        text-align: center;
+        margin-left: 0px;
+    }
+    #pata{
+        height: 60vh;
+    }
+    #ingredience .kontakty h1{
+        font-family: 'Montserrat';
+    }
+    #ingredience img{
+        width: 40px;
+        margin-top: 20px;
+    }
+    .footer{
+        height: 4vh;
+        width: 100%;
+        background-color: #e60737 !important;
+        float: left;
+        text-align: center;
+        color: white !important;
+        text-decoration: none !important;
+        padding-top: 2vh;
+        font-size: 2vh;
+    }
+    .footer a{
+        color: white;
+    }
+}
+
+@media (max-width: 899px){
+    ::-webkit-scrollbar {
+      width: 14px;
+      position: relative;
+      z-index: 0;
+    }
+    ::-webkit-scrollbar-track {
+    	background-color: transparent;
+        position: fixed;
+    }
+    ::-webkit-scrollbar-thumb {
+      background: #a3032699; 
+      border-radius: 8px;
+    }
+    ::-webkit-scrollbar-thumb:hover {
+      background: #e60737ff; 
+      border-radius: 8px;
+    }
+
+
+    h1{
+        color: black;
+        font-family: 'Reggae One', sans-serif;
+        font-size: 40px;
+        font-weight: 500;
+        margin-top: 10px;
+        margin-bottom: 10px;
+    }
+    h3{
+        color: #888;
+        font-weight: 400;
+        size: 15px;
+        font-family: 'Montserrat';
+    }
+
+
+    @keyframes line {
+        0% {
+            width: 0%;
+        }
+        30% {
+            width: 0%;
+        }
+        100% {
+            width: 80%;
+        }
+    }
+    @keyframes bottle{
+        0% {
+            opacity: 0;
+            transform: rotate(-10deg)  scale(0.5);
+        }
+        100% {
+            opacity: 1;
+            transform: rotate(20deg) scale(1);
+        }
+    }
+    @keyframes splash{
+        0% {
+            opacity: 0;
+            transform: rotate(-10deg)  scale(0.5);
+        }
+        25% {
+            opacity: 0;
+            transform: rotate(-10deg)  scale(0.5);
+        }
+        100% {
+            opacity: 1;
+            transform: rotate(10deg) scale(1);
+        }
+    }
+    @keyframes drop{
+        0% {
+            opacity: 0;
+            transform: rotate(-10deg)  scale(0.5);
+        }
+        25% {
+            opacity: 0;
+            transform: rotate(-10deg)  scale(0.5);
+        }
+        100% {
+            opacity: 1;
+            transform: rotate(15deg) scale(1);
+        }
+    }
+
+
+    .titlescreen{
+        float: left;
+        width: 100%;
+        height: 115vh;
+        overflow: hidden;
+    }
+    .text{
+        width: 25%;
+        height: 115vh;
+        float: left;
+        text-align: center;
+        font-family: 'Montserrat';
+    }
+    .text hr{
+        width: 80%;
+        color: #e60737;
+        border: none;
+        height: 4px;
+        background-color: #e60737;
+        animation: line 4s ease-in-out;
+    }
+    .text h1{
+        margin-top: 40vh;
+    }
+    .images{
+        display: block;
+        width: 50%;
+        height: 85vh;
+        float: left;
+        overflow: hidden;
+        padding-top: 15vh;
+    }
+    #splash{
+        animation: ease-in-out 2.2s splash;
+        transform: rotateZ(10deg);
+    }
+    #bottle{
+        animation: ease-in-out 2s bottle;
+        transform: rotateZ(20deg);
+    }
+    #drop{
+        animation: ease-in-out 2.5s drop;
+        transform: rotateZ(15deg);
+    }
+    .images img{
+        position: absolute;
+        width: 26vw;
+        margin-left: 12vw;
+        transform-origin: center center;
+    }
+
+
+
+    .screen{
+        float: left;
+        width: 100%;
+        height: 115vh;
+        overflow: hidden;
+        position: relative;
+        background-blend-mode: darken;
+    }
+    .screen .title{
+        height: 10vh;
+        width: 100%;
+        float: left;
+        position: relative;
+        z-index: 3;
+        padding-top: 10vh;
+    }
+    .title h1{
+        width: 100%;
+        text-align: center;
+        opacity: 4;
+    }
+    #vyroba{
+        position: absolute;
+        top: 0px;
+        left: 0px;
+        width: 100vw;
+        height: 115vh;
+        background-image: url(vyroba.jpg);
+        background-position-x: 100%;
+        background-position-y: center;
+        opacity: 0.65;
+    }
+    .uvod{
+        background-image: url(uvod.jpg) !important;
+        background-position-x: 140% !important;
+    }
+    .screen-gradient{
+        position: absolute;
+        z-index: 2;
+        top: -80vh;
+        left: -40vh;
+        width: 70vw;
+        height: 210vh;
+        transform: rotate(54deg);
+        background-color: #fafafac1;
+        backdrop-filter: blur(4px);
+    }
+    .title hr{
+        width: 15%;
+        color: #e60737;
+        border: none;
+        height: 4px;
+        background-color: #e60737;
+    }
+    .obsah{
+        width: 30%;
+        position: relative;
+        z-index: 4;
+        padding-top: 30vh;
+        padding-left: 10vw;
+        font-size: 20px;
+        font-family: 'Montserrat';
+        color: #444;
+    }
+    #ingredience .kontakty .subtitle h1{
+        color: #e60737;
+    }
+    #ingredience .kontakty .subtitle p{
+        margin-left: 15%;
+        width: 70%;
+        text-align: center !important;
+    }
+    .kontakty{
+        float: left;
+        width: 33.3%;
+        height: 100%;
+    }
+    .kontakty .subtitle{
+        float: left;
+        width: 100%;
+        height: 30px;
+        text-align: center;
+        padding-top: 20vh;
+        color: #e60737;
+    }
+    .subtitle hr{
+        color: #e60737;
+        background-color: #e60737;
+        width: 30%;
+        border: none;
+        height: 4px;
+    }
+    .subtitle h1{
+        font-size: 30px;
+    }
+    .subtitle ul{
+        list-style: none;
+        cursor: pointer;
+        text-align: left;
+        margin-left: 25%;
+        font-size: 20px;
+        font-weight: 400;
+    }
+    .subtitle li::before{
+        color: black;
+        content: "\2022";
+        display: inline-block;
+        width: 2em;
+        margin-left: -1em;
+    }
+    .subtitle p{
+        color: black;
+        cursor: pointer;
+        font-size: 20px;
+        font-weight: 400;
+        text-align: left;
+        margin-left: 25%;
+    }
+    .subtitle span{
+        color: #e60737;
+        font-size: 18px;
+        font-weight: 400;
+    }
+    #adresa p{
+        text-align: center;
+        margin-left: 0px;
+    }
+    #pata{
+        height: 60vh;
+    }
+    #ingredience .kontakty h1{
+        font-family: 'Montserrat';
+    }
+    #ingredience img{
+        width: 40px;
+        margin-top: 20px;
+    }
+    .footer{
+        height: 4vh;
+        width: 100%;
+        background-color: #e60737 !important;
+        float: left;
+        text-align: center;
+        color: white !important;
+        text-decoration: none !important;
+        padding-top: 2vh;
+        font-size: 2vh;
+    }
+    .footer a{
+        color: white;
+    }
+}

@@ -1,0 +1,313 @@
+<!DOCTYPE html>
+<html lang="cz">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Voice SMP</title>
+    <link rel="shortcut icon" href="logo2.png" type="image/x-icon">
+    <link rel="stylesheet" href="style.css">
+    
+</head>
+<a href="index.html"><div class="jazyk">
+    CZ
+</div></a>
+<body>
+    <div class="backg1"></div>
+    <div class="backg2"></div>
+    <div class="backg3">
+        <h1 class="subtitle">Minecraft, done differently.</h1>
+    </div>
+    <div class="backg-spacer"></div>
+    <div class="spacer">
+    </div>
+    <div class="menu" onclick="otevriMenu(this)">
+        <div class="menu-spacer"></div>
+        <div class="menu-logo"></div>
+        <div class="menu-logo-text"></div>
+        <div class="menu-button" onclick="uvod()">
+            Itroduction
+        </div>
+        <div class="menu-button" onclick="mody()">
+            Mods
+        </div>
+        <div class="menu-button" onclick="jak()">
+            How to join
+        </div>
+        <div class="menu-button" onclick="info()">
+            Info
+        </div>
+    </div>
+    <div class="post" id="uvod">
+        <div class="content">
+            <div class="content-spacer"></div>
+            <div class="post-title" style="overflow-x: hidden;">
+                Introduction
+            </div>   
+            <div class="post-text">
+                Does it ever feel like Minecraft no longer offers anything new? Is everything starting to feel bogged down and lifeless during lockdown?
+                <br>
+                <br>
+                We faced the same issue.
+                <br>
+                Thats why Voice SMP was created!
+                One of the first Minecraft servers with voice chat inspired by a popular twitch series
+                <a href="https://epicsmp.fandom.com/wiki/EpicSMP_Wiki" target="_blank">Epic SMP</a>, which we were very interested in and we would like to bring its unique features to ordinary players.
+                <br>
+                <br>
+                To keep the comunity friendly and united, we use <span>whitelist</span>. 
+                <br><span style="color: #354570;">(Also, you don't need to own the bought game to play here)</span>
+                <br> 
+                In order to play with us you'll need to notify some member of our team (On any <a href="#info"> mentioned socials</a>). We will gladly welcome you to our comunity as long as you act reasonably (<span>While still having fun, ofcourse</span>).
+                
+            </div>
+        </div>
+    </div>
+    <div class="post" id="mody">
+        <div class="content">
+            <div class="content-spacer"></div>
+            <div class="post-title">
+                Mods
+            </div>   
+            <div class="post-text">
+                At this time the server offers just two mods, but we're planning to add more later.
+                <ul>
+                    <li>
+                        <p>Create</p>
+                        Create Mod is a sophisticated technical mod that alows players to move entire buildings, make interesting farms and much more.
+                    </li>
+                    <br>
+                    <li>
+                        <p>Mumble</p>
+                        Mumble mod is for proximity/voice chat, the main server feature.
+                    </li>
+                </ul>    
+            </div>
+        </div>
+    </div>
+    <div class="post" id="jak" style="height: 90vh;">
+        <div class="content" style="height: 90vh;">
+            <div class="content-spacer" style="height: 80vh;"></div>
+            <div class="post-title">
+                How to join
+            </div>   
+            <div class="post-text">
+                Unfortunately, due to the complexity of Mumble mod, the necessary software installation is
+                more demanding unlike the conventional servers.
+                <br> 
+                We have prepared a tutorial for you on
+                how to set everything up.
+                <br>
+                 No worries, in 10 to 20 minutes you will be able to play on the
+                server with others!
+                <p>Files needed:</p>
+                <ul>
+                    <li>Forge installer 1.16.5 <a target="_blank" href="http://files.minecraftforge.net/maven/net/minecraftforge/forge/index_1.16.5.html">here</a> - Minecraft version that supports mods. </li>
+                    <li>Create 1.16.5 <a target="_blank" href="https://www.curseforge.com/minecraft/mc-mods/create/files/3167531">here</a></li>
+                    <li>Mumble link 1.16.5 <a target="_blank" href="https://www.curseforge.com/minecraft/mc-mods/mumblelink/files/3196471">here</a> - Mod for linking Mumble program with minecraft. </li>
+                    <br>
+                    <li>Mumble <a target="_blank" href="https://www.mumble.com/">here</a> - Standalone program responsible for voice chat.</li>
+                </ul>
+                <a href="navod-en.html"><button>
+                    Tutorial
+                </button></a>
+            </div>
+        </div>
+    </div>
+    <div class="footer" id="info">
+        <div class="footer-title">
+            Contacts
+        </div>
+        <div class="footer-title">
+            Credits
+        </div>
+        <div class="footer-content">
+            <div class="kontakt-outside">
+                <div class="icon" onclick="pilchdiscord()">
+                    <span class="tooltiptext2" id="myTooltip">Copied!</span><img src="discord.png" width="35px" alt=""></div>
+                <div class="kontakt-name">
+                    Pilchström#4378
+                </div>
+                <input type="text" style="position: absolute; opacity: 0;" value="Pilchström#4378" id="pilchdiscord">
+                <script>
+                    function pilchdiscord(){
+                        var copyText = document.getElementById("pilchdiscord");
+                        copyText.select();
+                        copyText.setSelectionRange(0, 99999);
+                        document.execCommand("copy");
+                    }
+                </script>
+            </div>
+            <div class="kontakt-outside">
+                <a href="https://www.instagram.com/danmakesstuff_/" target="_blank"><div class="icon">
+                    <img src="instagram.png" width="35px" alt="">
+                </div></a>
+                <div class="kontakt-name">
+                     @danmakesstuff_
+                </div>
+            </div>
+            <div class="kontakt-outside">
+                <div class="icon" onclick="dandiscord()">
+                    <span class="tooltiptext2" id="myTooltip">Copied!</span><img src="discord.png" width="35px" alt=""></div>
+                <div class="kontakt-name">
+                    DanMakesStuff#2503
+                </div>
+                <input type="text" style="position: absolute; opacity: 0;" value="DanMakesStuff#2503" id="dandiscord">
+                <script>
+                    function dandiscord(){
+                        var copyText = document.getElementById("dandiscord");
+                        copyText.select();
+                        copyText.setSelectionRange(0, 99999);
+                        document.execCommand("copy");
+                    }
+                </script>
+            </div>
+            <div class="kontakt-outside">
+                <div class="icon" onclick="ip()" style="background-color: rgb(233, 159, 0); border-color: rgb(158, 108, 0);">
+                    <span class="tooltiptext" id="myTooltip">Copied!</span><img src="minecraft.png" width="35px" alt=""></div>
+                <div class="kontakt-name">
+                    157.90.34.58:25753
+                </div>
+                <input type="text" style="position: absolute; opacity: 0;" value="157.90.34.58:25753" id="ip">
+                <script>
+                    function ip(){
+                        var copyText = document.getElementById("ip");
+                        copyText.select();
+                        copyText.setSelectionRange(0, 99999);
+                        document.execCommand("copy");
+                    }
+                </script>
+            </div>
+            <div class="kontakt-outside">
+                <a href="https://discord.gg/zsVKSduByg" target="_blank">
+                <div class="icon" style="background-color: rgb(233, 159, 0); border-color: rgb(158, 108, 0);">
+                    <img src="discord.png" width="35px" alt=""></div></a>
+                <div class="kontakt-name">
+                    Voice SMP
+                </div>
+            </div>
+            <div class="kontakt-outside">
+                <div class="icon" onclick="mail()" style="background-color: rgb(233, 159, 0); border-color: rgb(158, 108, 0);">
+                    <span class="tooltiptext" id="myTooltip">Copied!</span>
+                    <img src="email.png" width="35px" alt="">
+                </div>
+                <div class="kontakt-name">
+                    info@voicesmp.cz
+                </div>
+                <input type="text" style="position: absolute; opacity: 0;" value="info@voicesmp.cz" id="email">
+                <script>
+                    function mail(){
+                        var copyText = document.getElementById("email");
+                        copyText.select();
+                        copyText.setSelectionRange(0, 99999);
+                        document.execCommand("copy");
+                    }
+                </script>
+            </div>
+        </div>
+        <div class="footer-content2">
+            Hosting: <span>Batcore.eu</span>
+            <br>
+            <br>
+            Mc Server: <span>DanMakesStuff</span>, <span>Renkity(Pilchström)</span>
+            <br>
+            <br>
+            Website: <span>DanMakesStuff</span>
+            <br>
+            <br>
+            Voice acting (server trailer): <span>Renkity(Pilchström)</span>, <span>Petros757</span>, <span>DanMakesStuff</span>
+            <br>
+            <br>
+            Sponsor: <span>@Jakub.Jenik</span>
+            <div class="credits">
+                *thanks alot to everyone who participated. -DanMakesStuff
+            </div>
+        </div>
+        <div class="footer-copyright">
+            Copyright © 2021 - DanMakesStuff | All rights reserved. | Beta 0.7
+        </div>
+    </div>
+</body>
+<script>
+    mybutton = document.querySelector("body > div.menu > div.menu-logo-text");
+    menu = document.querySelector("div.menu");
+    menuButton = document.querySelector("div.menu-button");
+    menuButton2 = document.querySelector("body > div.menu > div:nth-child(5)")
+    menuButton3 = document.querySelector("body > div.menu > div:nth-child(6)")
+    menuButton4 = document.querySelector("body > div.menu > div:nth-child(7)")
+    menuLogo = document.querySelector("div.menu-logo");
+    menutext = document.querySelector("div.menu-logo-text");
+    window.onscroll = function() {scrollFunction()};
+
+    function scrollFunction() {
+  if ((document.body.scrollTop > 300 &&  window.innerWidth > 900) ||
+     (document.documentElement.scrollTop > 300 &&  window.innerWidth > 900)) {
+        console.log("Zmenseno menu")
+      mybutton.style.transform = "translateX(60px) scaleX(1)";
+      menu.style.height = "65px";
+      
+      menuButton.style.height = "65px";
+      menuButton.style.fontSize = "32px";
+      menuButton.style.paddingTop = "10px";
+      menuButton2.style.height = "65px";
+      menuButton2.style.fontSize = "32px";
+      menuButton2.style.paddingTop = "10px";
+      menuButton3.style.height = "65px";
+      menuButton3.style.fontSize = "32px";
+      menuButton3.style.paddingTop = "10px";
+      menuButton4.style.height = "65px";
+      menuButton4.style.fontSize = "32px";
+      menuButton4.style.paddingTop = "10px";
+
+      menu.style.backgroundColor = "rgba(255, 255, 255, 0.1)";
+      menu.style.backdropFilter = "contrast(70%) blur(2px)"
+
+      menuLogo.style.height = "65px";
+      menuLogo.style.width = "65px";
+      menutext.style.height = "90px";
+      menutext.style.opacity = "1";
+  } else if (window.innerWidth > 900) {
+    mybutton.style.transform = "translateX(-5vw) scaleX(0)";
+    menu.style = null;
+    menuButton.style = null;
+    menuButton2.style = null;
+    menuButton3.style = null;
+    menuButton4.style = null;
+    menuLogo.style = null;
+    menutext.style = null;
+    console.log("zvetseno menu")
+  }
+}
+    function kontakty(){
+        document.querySelector("div.kontakty-content").style.height = "120px";
+        document.querySelector("div.kontakty-header button").onclick = kontaktyOff;
+    }
+    function kontaktyOff(){
+        document.querySelector("div.kontakty-content").style.height = "0vh";
+        document.querySelector("div.kontakty-header button").onclick = kontakty;
+    }
+    function jak(){
+        document.getElementById("jak").scrollIntoView({behavior: "smooth", block: "end"});
+    }
+    function uvod(){
+    document.getElementById("uvod").scrollIntoView({behavior: "smooth", block: "end"});
+}
+function mody(){
+    document.getElementById("mody").scrollIntoView({behavior: "smooth", block: "end"});
+}
+function info(){
+    document.getElementById("info").scrollIntoView({behavior: "smooth", block: "end"});
+}
+function otevriMenu(otevr){
+    if (window.innerWidth < 900 && otevr.style.height == ""){
+    otevr.style.height = "300px";
+    console.log("Oteviram menu")
+    }
+    else if(window.innerWidth < 900 && otevr.style.height == "300px"){
+    otevr.style.height = null;
+    console.log("Zaviram menu")
+    }
+}
+</script>
+<script src="kontakty.js"></script>
+</html>
