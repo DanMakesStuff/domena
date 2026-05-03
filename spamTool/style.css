@@ -1,0 +1,22 @@
+body{
+    background-color: #151218;
+    color: aliceblue;
+    font-size: 17px;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+input{
+    background-color: #201b26;
+    border: none;
+    color: white;
+    margin: 10px;
+    padding: 5px;
+    border-radius: 5px;
+    width: 12vmin;
+    font-size: 17px;
+}
+#vystup{
+    margin: 10px;
+    padding: 5px;
+    background-color: #201b26;
+    border-radius: 5px;
+}

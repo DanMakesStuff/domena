@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Generator spamu</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <h1>Generator spamu</h1>
+    
+    <h3>Menu</h3>
+    <div class="nasobitel">
+        Nasobitel slov:
+        <input type="number" id="nasobitel" value="2" onchange="nasobitelSet(this)">
+    </div>
+    <br>
+    <div class="mnozstviSlov">
+        Mnozstvi slov:
+        <input type="number" value="1" max="20" min="1" id="mnozstviSlov" onchange="pocetSlov(this)">
+    </div>
+    <br>
+    <div id="slova">
+        <input type="text" class="slovo" value="prvniSLovo" name="" id="0">
+    </div>
+    <br>
+    <button onclick="vypisSlova()">Vypsat slova</button>
+    <br>
+    <br>
+    <h3>Vystup</h3>
+    <div id="vystup">
+        <br>
+    </div>
+</body>
+<script src="script.js"></script>
+</html>
